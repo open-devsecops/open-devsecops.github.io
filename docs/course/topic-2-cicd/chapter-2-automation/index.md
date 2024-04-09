@@ -1,5 +1,5 @@
 ---
-title: Automation
+title: Chapter 2 - Automation
 layout: default
 parent: Topic 2 - CI/CD
 has_children: true
