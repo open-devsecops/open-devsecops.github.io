@@ -3,7 +3,7 @@ title: Home
 layout: home
 nav_order: 0
 ---
-## DevSecOps Curriculum
+# DevSecOps Curriculum 💻
 >> Made by 2024 University of Washington Informatics Capstone Team Info Innovators
 
 >> Sponsored by Boeing
@@ -12,7 +12,7 @@ Welcome to our open-source DevSecOps curriculum!
 
 This comprehensive resource is designed to equip new graduates, companies, professors, students, and self-learners with practical skills in DevSecOps, thereby bridging the knowledge gap in its principles and practices. Our curriculum prepares students for a smooth transition from academic learning to the professional environment by focusing on real-world applications.
 
-## Why DevSecOps and CI/CD in Academia? 🎓💻
+## Why DevSecOps and CI/CD in Academia? 🎓
 The tech world is rapidly evolving, and with it, the requirements of the software industry are changing at an unprecedented pace. Traditional academic curricula often lag behind, particularly in areas like DevSecOps and CI/CD practices. This creates a significant skills gap for graduates entering the industry, who find themselves unprepared for the demands of modern software development and deployment. Key insights from our research highlight this disconnect:
 
 - **Skills Gap**: As per the [Veracode Global Skills Survey](https://www.veracode.com/blog/security-news/veracode-survey-research-identifies-cybersecurity-skills-gap-causes-and-cures), about 70% of respondents stated that new graduates did not receive adequate training for their current positions. This gap is particularly evident in DevSecOps, where the integration of security in the development pipeline is crucial yet often overlooked in academic settings.
@@ -34,9 +34,6 @@ To understand the skills gap that new graduates face, refer to our [User Researc
 - **Accessibility**: Democratizing education in DevSecOps.
 - **Adaptability**: Customizable for different educational settings.
 - **Transparency and Trust**: Encouraging scrutiny and feedback for quality content.
-
-## Getting Started :rocket:
-[Add information to get started here]
 
 ## Contributing to the Curriculum 🤝
 Contributions are welcome! Help us keep the curriculum relevant and effective by updating content, adding new exercises, or providing feedback.
