@@ -1,5 +1,5 @@
 ---
-title: Containerization
+title: Chapter 1 - Containerization
 layout: default
 parent: Topic 2 - CI/CD
 has_children: true
