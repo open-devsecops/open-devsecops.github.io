@@ -1,5 +1,5 @@
 ---
-title: Git
+title: Chapter 1 - Git
 layout: default
 parent: Topic 1 - Version Control
 has_children: true
