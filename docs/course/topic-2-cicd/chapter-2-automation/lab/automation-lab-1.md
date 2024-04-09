@@ -2,7 +2,7 @@
 title: Lab 1. Configuring a Simple Jenkins Pipeline
 layout: default
 grand_parent: Topic 2 - CI/CD
-parent: Automation
+parent: Chapter 2 - Automation
 nav_order: 2
 ---
 

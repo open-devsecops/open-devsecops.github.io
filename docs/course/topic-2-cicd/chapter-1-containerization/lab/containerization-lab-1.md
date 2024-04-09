@@ -2,11 +2,11 @@
 layout: default
 title: Lab 1. Containerizing a React Application
 grand_parent: Topic 2 - CI/CD
-parent: Containerization
+parent: Chapter 1 - Containerization
 nav_order: 2
 ---
 
-## Learning Objectives
+## Learning Objectivesss
 - Create a Docker image of a React application
 - Run the Docker image locally
 - Interact with a running Docker container
