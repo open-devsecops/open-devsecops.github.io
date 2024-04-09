@@ -149,7 +149,25 @@ Due to the nature of continuous integration, every change needs to be monitored 
 Integrating both SAST and DAST in the security testing process provides a more comprehensive approach to application security. SAST can identify vulnerabilities early in the code, while DAST can test the application’s behavior in a runtime environment, catching issues that static analysis might miss. Together, they offer a balanced and thorough method for securing applications throughout the development lifecycle.
 
 ## Vulnerability scanning
-## Examples of widely-used tools in industry
+Vulnerability scanning in a CI/CD pipeline refers to the automated process of identifying security weaknesses in the software code, dependencies, and runtime environments as part of the continuous integration and delivery process. This scanning can detect issues such as insecure coding practices, outdated libraries, misconfigurations, and other vulnerabilities that could potentially be exploited by attackers. You read above the difference between SAST testing and DAST testing. Those processes can be testing using a variety of tools. Some may be cheaper than others, require contracts with experts, or could just be a web plug in. Some of the most popular options you may hear of are listed below
+
+### Examples of widely-used tools in industry:
+
+> SonarQube - A comprehensive tool that provides static code analysis, identifying vulnerabilities, bugs, and code smells in several programming languages
+
+> OWASP ZAP (Zed Attack Proxy) - An open-source dynamic application security testing tool that can identify security vulnerabilities in web applications during development and testing phases
+
+> Fortify - Provides static and dynamic application security testing tools to identify vulnerabilities in code and running applications
+
+> Veracode - Offers a suite of security tools, including static, dynamic, and interactive application security testing, to identify and fix vulnerabilities at various stages of the software development lifecycle
+
+> Snyk - Specializes in identifying and fixing vulnerabilities in open-source dependencies and container images, integrating seamlessly with CI/CD pipelines
+
+> GitLab CI/CD Security Scanning - Offers built-in security scanning features in its CI/CD pipelines, including static and dynamic analysis, dependency scanning, and container scanning
+
+> Jenkins with security plugins - Jenkins, a popular automation server, can be configured with various security plugins to perform static and dynamic analysis, as well as other security checks within the CI/CD pipeline
+
+There are countless variations of vulnerability scanners out there and are constantly being innovated. Every software team should take throrough time to research and test as many tools as possible within their budget and timeline to ensure their pipeline is fully covered.
 
 
 ### References
@@ -158,3 +176,13 @@ Integrating both SAST and DAST in the security testing process provides a more c
 **2.** “Security in every stage of CI/CD pipeline” *AWS*, [https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/security-in-every-stage-of-cicd-pipeline.html](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/security-in-every-stage-of-cicd-pipeline.html). Accessed 9 Apr. 2024.
 
 **3.** “SAST, DAST, and IAST Security Testing” *Contrast Security*, [https://www.contrastsecurity.com/security-influencers/why-the-difference-between-sast-dast-and-iast-matters](https://www.contrastsecurity.com/security-influencers/why-the-difference-between-sast-dast-and-iast-matters). Accessed 9 Apr. 2024.
+
+**4.** “How to use the Jenkins Security Scan ” *Jenkins*, [https://www.jenkins.io/doc/developer/security/scan/](https://www.jenkins.io/doc/developer/security/scan/). Accessed 9 Apr. 2024.
+
+**5.** “SonarQube” *SonarQube*, [https://www.sonarsource.com/products/sonarqube/](https://www.sonarsource.com/products/sonarqube/). Accessed 9 Apr. 2024.
+
+**6.** "Snyk Open Source" *Snyk*, [https://snyk.io/product/open-source-security-management/?utm_medium=paid-search&utm_source=google&utm_campaign=gs_sn:-brand-ecpc&utm_content=br_sca&utm_term=snyk%20sca&gad_source=1&gclid=Cj0KCQjwztOwBhD7ARIsAPDKnkBbO4ZOhhLOMFnW3niLxxHAljuqKD8iOqe82_KTv9t4CDljRWacTd8aAlTxEALw_wcB](https://snyk.io/product/open-source-security-management/?utm_medium=paid-search&utm_source=google&utm_campaign=gs_sn:-brand-ecpc&utm_content=br_sca&utm_term=snyk%20sca&gad_source=1&gclid=Cj0KCQjwztOwBhD7ARIsAPDKnkBbO4ZOhhLOMFnW3niLxxHAljuqKD8iOqe82_KTv9t4CDljRWacTd8aAlTxEALw_wcB). Accessed 9 Apr. 2024.
+
+**7.** “Vulnerability Scanner Tools” *Veracode*, [https://www.veracode.com/security/vulnerability-scanning-tools](https://www.veracode.com/security/vulnerability-scanning-tools). Accessed 9 Apr. 2024.
+
+**8.** “What is Fortify and How it works? An Overview and Its Use Cases” *DevOps School*, [https://www.devopsschool.com/blog/what-is-fortify-and-how-it-works-an-overview-and-its-use-cases/](https://www.devopsschool.com/blog/what-is-fortify-and-how-it-works-an-overview-and-its-use-cases/). Accessed 9 Apr. 2024.
