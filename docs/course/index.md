@@ -6,7 +6,19 @@ nav_order: 1
 ---
 
 ## Course Overview 📖
-[Topics and Chapters here]
+### Topic 1 - Version Control
+- Chapter 1 Version Control * 
+- Chapter 2 Cooperative Software Development *
+### Topic 2 - CI/CD
+- Chapter 1 Containerization *
+- Chapter 2 Automation *
+- Chapter 3 Deployment
+- Chapter 4 Automated Tests
+### Topic 3 - DevSecOps
+- Chapter 1 DevSecOps *
+- Chapter 2 Security Checks in CI/CD
+
+> "*" Means this chapter has an interactive lab!
 
 ## What is DevSecOps and CI/CD? 🔍
 **DevSecOps** is an integration of **development** (Dev), **security** (Sec), and **operations** (Ops) practices. It's a cultural shift that emphasizes security as a fundamental part of the software development lifecycle. By introducing security early in the development process, DevSecOps ensures that it's a shared responsibility and not just an afterthought.<sup>1-3</sup>
