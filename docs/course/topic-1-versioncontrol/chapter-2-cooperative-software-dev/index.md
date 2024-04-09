@@ -1,5 +1,5 @@
 ---
-title: Cooperative Software Development
+title: Chapter 2 - Cooperative Software Development
 layout: default
 parent: Topic 1 - Version Control
 has_children: true
