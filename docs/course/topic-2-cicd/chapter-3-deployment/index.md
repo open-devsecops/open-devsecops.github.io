@@ -1,5 +1,5 @@
 ---
-title: Deployment
+title: Chapter 3 - Deployment
 layout: default
 parent: Topic 2 - CI/CD
 has_toc: false
