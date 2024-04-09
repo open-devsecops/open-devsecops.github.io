@@ -3,6 +3,11 @@ title: Home
 layout: home
 nav_order: 0
 ---
+## DevSecOps Curriculum
+>> Made by 2024 University of Washington Informatics Capstone Team Info Innovators
+
+>> Sponsored by Boeing
+
 Welcome to our open-source DevSecOps curriculum!
 
 This comprehensive resource is designed to equip new graduates, companies, professors, students, and self-learners with practical skills in DevSecOps, thereby bridging the knowledge gap in its principles and practices. Our curriculum prepares students for a smooth transition from academic learning to the professional environment by focusing on real-world applications.
