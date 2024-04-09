@@ -29,7 +29,7 @@ Every organization has a different way of defining their pipeline and the stages
 
 
 >> {: .highlight }
-The stages of SCLC can also be referred as the 6 stages:
+The stages of SDLC can also be referred as the 6 stages:
 1. Project Planning
 2. Gathering Code Requirements & Analysis
 3. Design and Build
