@@ -18,4 +18,9 @@ has_toc: false
 9. Zorabedian, John, et al. “Veracode Survey Research Identifies Cybersecurity Skills Gap Causes and Cures.” Veracode, www.veracode.com/blog/security-news/veracode-survey-research-identifies-cybersecurity-skills-gap-causes-and-cures. Accessed 6 Feb. 2024.
 10. Cohen, Lior, et al. “Filling the Skills Gap for Effective Devsecops.” DevOps.Com, 24 Apr. 2020, devops.com/filling-the-skills-gap-for-effective-devsecops/. 
 11. “Addressing the DEVSECOPS Skill Gap.” We45 Blogs, www.we45.com/post/addressing-the-devsecops-skill-gap. Accessed 6 Feb. 2024.
-12. Wylie Wong “To Optimize Cloud Deployments, Close the Skills Gap.” Technology Solutions That Drive Education, 26 June 2023, edtechmagazine.com/higher/article/2019/04/optimize-cloud-deployments-close-skills-gap-perfcon. 
+12. Wylie Wong “To Optimize Cloud Deployments, Close the Skills Gap.” Technology Solutions That Drive Education, 26 June 2023, edtechmagazine.com/higher/article/2019/04/optimize-cloud-deployments-close-skills-gap-perfcon.
+13. “What is DevSecOps?” *Red Hat*, https://www.redhat.com/en/topics/devops/what-is-devsecops. Accessed 8 Apr. 2024.
+14. “What is DevSecOps?” *Microsoft*, https://www.microsoft.com/en-us/security/business/security-101/what-is-devsecops. Accessed 8 Apr. 2024.
+15. “Use containers to Build, Share and Run your applications” *Docker*, https://www.docker.com/resources/what-container/. Accessed 8 Apr. 2024.
+
+16. “Shift left vs. shift right” *Red Hat*, https://www.redhat.com/en/topics/devops/shift-left-vs-shift-right. Accessed 8 Apr. 2024.
