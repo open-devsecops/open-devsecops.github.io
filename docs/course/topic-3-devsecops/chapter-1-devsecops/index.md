@@ -1,5 +1,5 @@
 ---
-title: DevSecOps
+title: Chapter 1 - DevSecOps
 layout: default
 parent: Topic 3 - DevSecOps
 has_children: true
