@@ -117,6 +117,7 @@ Then, once you want to make a change, the following happens:
 2. **GitHub sends a webhook** - Because of the rule you set up, GitHub notifies your CI/CD tool that something happened (like a code push).
 3. **CI/CD tool starts tests** - The CI/CD tool, now informed by the webhook, starts running the tests or actions you've configured it to perform upon receiving such a notification.
 
+### References 
 <details>
   <Summary>Sources</Summary>
   - https://devops.com/i-want-to-do-continuous-deployment/

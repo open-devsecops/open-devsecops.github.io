@@ -86,12 +86,11 @@ To **shift right** is to monitor user behavior, usage, performance, and security
 <p><em>Source 1: <a href="https://www.docker.com/resources/what-container/">Docker</a></em></p>
 <p><em>Source 2: <a href="https://www.microsoft.com/en-us/security/business/security-101/what-is-devsecops">Microsoft</a></em></p>
 </p>
-</details>
+</details> 
 
 
 
-
-
+ 
 ### References
 
 **1.** “What is DevSecOps?” *Red Hat*, [https://www.redhat.com/en/topics/devops/what-is-devsecops](https://www.redhat.com/en/topics/devops/what-is-devsecops). Accessed 8 Apr. 2024.
@@ -101,3 +100,4 @@ To **shift right** is to monitor user behavior, usage, performance, and security
 **3.** “Use containers to Build, Share and Run your applications” *Docker*, [https://www.docker.com/resources/what-container/](https://www.docker.com/resources/what-container/). Accessed 8 Apr. 2024.
 
 **4.** “Shift left vs. shift right” *Red Hat*, [https://www.redhat.com/en/topics/devops/shift-left-vs-shift-right](https://www.redhat.com/en/topics/devops/shift-left-vs-shift-right). Accessed 8 Apr. 2024.
+

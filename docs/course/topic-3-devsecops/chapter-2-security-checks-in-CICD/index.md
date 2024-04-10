@@ -171,6 +171,8 @@ There are countless variations of vulnerability scanners out there and are const
 
 
 ### References
+
+
 **1.** “What is CI/CD security?” *Red Hat*, [https://www.redhat.com/en/topics/security/what-is-cicd-security#:~:text=CI%2FCD%20security%20is%20used,policies%2C%20and%20ensure%20quality%20assurance.](https://www.redhat.com/en/topics/security/what-is-cicd-security#:~:text=CI%2FCD%20security%20is%20used,policies%2C%20and%20ensure%20quality%20assurance.). Accessed 9 Apr. 2024.
 
 **2.** “Security in every stage of CI/CD pipeline” *AWS*, [https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/security-in-every-stage-of-cicd-pipeline.html](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/security-in-every-stage-of-cicd-pipeline.html). Accessed 9 Apr. 2024.
@@ -186,3 +188,4 @@ There are countless variations of vulnerability scanners out there and are const
 **7.** “Vulnerability Scanner Tools” *Veracode*, [https://www.veracode.com/security/vulnerability-scanning-tools](https://www.veracode.com/security/vulnerability-scanning-tools). Accessed 9 Apr. 2024.
 
 **8.** “What is Fortify and How it works? An Overview and Its Use Cases” *DevOps School*, [https://www.devopsschool.com/blog/what-is-fortify-and-how-it-works-an-overview-and-its-use-cases/](https://www.devopsschool.com/blog/what-is-fortify-and-how-it-works-an-overview-and-its-use-cases/). Accessed 9 Apr. 2024.
+
