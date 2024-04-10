@@ -23,11 +23,11 @@ Transitioning from the exploration of DevOps and CI/CD, we now turn our attentio
 
 
 ## Deployment Environments
-| Environment    | Purpose                                        | Characteristics                                                                                          | CI/CD Role                                                                   |
-|----------------|------------------------------------------------|---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| 💻 Development | Initial coding and testing by developers.      | • Runs on local machines or a dev server.<br>• Frequent changes and updates.<br>• Connected to a test database.<br>• Debugging tools are enabled. | • The starting point in the CI/CD process.<br>• Triggers the initial build and unit tests. |
-| 🚦 Staging     | Final testing before going live. Acts as a pre-production replica. | • Closely mimics the production environment.<br>• Stable and isolated for accurate testing.<br>• Hosts the release candidate version. | • Used for performance, integration, and user acceptance testing.<br>• Final checks before production. |
-| 🌐 Production  | The live environment used by end-users.         | • The most stable and secure.<br>• Contains real user data and faces the internet.<br>• Performance monitoring and error logging are carefully balanced. | • The final stage of the pipeline.<br>• If all checks pass, code is deployed here.     |
+| Environment   | Purpose                                         | Characteristics                                                                            | CI/CD Role                                                                    |
+|:--------------|:------------------------------------------------|:-------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------|
+| 💻 Development| Initial coding and testing by developers.       | Runs on local machines or dev server, Frequent changes and updates, Connected to a test database, Debugging tools are enabled | Starting point in CI/CD process, Triggers initial build and unit tests       |
+| 🚦 Staging    | Final testing before going live. Acts as a pre-production replica. | Mimics production environment, Stable and isolated for testing, Hosts release candidate version | Used for performance, integration, and user acceptance testing, Final checks before production |
+| 🌐 Production | The live environment used by end-users.         | Most stable and secure, Contains real user data and faces the internet, Performance monitoring and error logging | Final stage of the pipeline, Code is deployed if all checks pass             |
 
 
 <br>
