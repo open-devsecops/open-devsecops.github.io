@@ -17,17 +17,18 @@ Transitioning from the exploration of DevOps and CI/CD, we now turn our attentio
 >   - **Endpoint Mismatch**: Mariam's new features expect certain responses from the API that Ani has since altered or deprecated, leading to unexpected behavior and failures in feature operation.
 >   - **Database Schema Changes**: Ani's API update included modifications to the database schema that Mariam's code was not designed to accommodate, resulting in broken database queries and data consistency issues.
 >
-> It might seem as though it was Ani and Mariam's lack of communication at fault for not communicating before building and deploying, but imagine they are working in a company as large as Amazon or Boeing. It would be impractical and redundant to expect to know every developer's job.
+> It might seem as though it was Ani and Mariam's lack of communication before building and deploying at fault, but imagine they are working in a company as large as Amazon or Boeing. It would be impractical and redundant to expect to know every developer's job.
 
 
 
 
 ## Deployment Environments
-| Environment           | Purpose                                        | Characteristics                                                                                                                                                         | CI/CD Role                                                                     | 
-|-----------------------|------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| 💻 Development        | Initial coding and testing by developers.      | - Runs on local machines or a dev server. <br> - Frequent changes and updates. <br> - Connected to a test database. <br> - Debugging tools are enabled.                | The starting point in the CI/CD process. Triggers the initial build and unit tests. |
-| 🚦 Staging            | Final testing before going live. Acts as a pre-production replica. | - Closely mimics the production environment. <br> - Stable and isolated for accurate testing. <br> - Hosts the release candidate version.                           | Used for performance, integration, and user acceptance testing. Final checks before production.             |
-| 🌐 Production         | The live environment used by end-users.         | - The most stable and secure. <br> - Contains real user data and faces the internet. <br> - Performance monitoring and error logging are carefully balanced.          | The final stage of the pipeline. If all checks pass, code is deployed here.     |
+| Environment        | Purpose                                      | Characteristics                                                                                               | CI/CD Role                                                                     |
+|--------------------|----------------------------------------------|---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| 💻 Development     | Initial coding and testing by developers.    | - Runs on local machines or a dev server.<br>- Frequent changes and updates.<br>- Connected to a test database.<br>- Debugging tools are enabled. | - The starting point in the CI/CD process.<br>- Triggers the initial build and unit tests. |
+| 🚦 Staging         | Final testing before going live. Acts as a pre-production replica. | - Closely mimics the production environment.<br>- Stable and isolated for accurate testing.<br>- Hosts the release candidate version. | - Used for performance, integration, and user acceptance testing.<br>- Final checks before production.             |
+| 🌐 Production      | The live environment used by end-users.      | - The most stable and secure.<br>- Contains real user data and faces the internet.<br>- Performance monitoring and error logging are carefully balanced. | - The final stage of the pipeline.<br>- If all checks pass, code is deployed here.     |
+
 
 <br>
 
