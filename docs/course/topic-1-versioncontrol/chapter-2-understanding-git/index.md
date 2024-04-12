@@ -1,35 +1,12 @@
 ---
-title: Chapter 2 - Understanding Version Control
+title: Chapter 2 - Git Fundamentals
 layout: default
-parent: Topic 1 - Version Control & Cooperative Software Development
-has_children: true
+parent: Topic 1 - Cooperative Software Development
 has_toc: false
 nav_order: 2
 ---
 
-# Version Control
-## What is version control?
-Version control is **a system that records changes to a file or set of files over time** so that you can recall specific versions later. It's a critical tool in modern software development, allowing developers to work collaboratively, track every modification, and revert to previous states if necessary.
-
-> **Example Scenario**
->
-> Armine and Tigran are part of a software development team tasked with creating a new mobile application. Armine is tasked with refining the user authentication system, while Tigran is implementing an innovative feature that allows users to share media within the app.
->
-> **Without Version Control**: If Armine and Tigran are editing the same file, Tigran's latest upload could accidentally overwrite the changes Armine made, resulting in a loss of progress and potential conflicts in the code.
->
-> **With Version Control**: Armine and Tigran can work on their updates concurrently without the risk of interfering with each other's contributions. Here's how it unfolds:
->
-> - Independently, they make their changes and commit their updates to the version control system, each creating a new version in the repository.
->
-> - The version control system alerts them to the presence of new, separate updates, signaling that a merge of changes is necessary.
->
-> - Together, they examine the differences, carefully integrate their respective code changes, and commit the unified version to the repository.
->
-> - Should an issue arise with the authentication update, Armine can revert her portion of the code to a previous state without disrupting Tigran's feature, thanks to the version history maintained by the system.
-
-A common tool for version control is GitHub. GitHub allows you acts as a central hub for all of the different versions of your code, kind of how in google docs you can see the history of your changes. Though there are many different systems for version control, we will be learning using GitHubs features. The syntax and user interface of different products are different, but the core elements are the same. 
-
-## Fundamentals 
+# Fundamentals 
 ### What is a repository?
 Repositories are like digital libraries where all the files for a specific project are stored. It is the central hub where the creator of the repository (also known as a repo) can decide who can edit and view the files. In GitHub you can create as many repositories as you want and you will be able to control the structure and workflow you want for your project or organization. 
 
@@ -98,36 +75,7 @@ Creating a branch in Git is a fast and simple operation because it doesn't copy 
 
 By using branches, you can manage the development of new features, fixes, and updates in a structured and organized manner, allowing for a smoother and more controlled workflow.
 
-## Branching Strategies
 
-Branching in Git allows multiple developers to work on different tasks simultaneously without interfering with each other's work. Here are some common strategies:
-
-- **Feature Branching**: Create branches for each new feature to keep changes isolated from the main codebase.
-- **Release Branching**: Maintain separate branches for release candidates, allowing for bug fixes and preparation for a production release.
-- **Hotfix Branching**: Quickly create branches to address urgent bugs in production code.
-
-Each strategy serves a specific purpose and can be chosen based on the team's workflow and project requirements.
-
-## Types of Merging
-
-Merging is the process of integrating changes from one branch into another. Git offers several types of merges:
-
-- **Fast-Forward Merge**: Moves the base branch pointer forward until it equals the feature branch's pointer.
-- **Three-Way Merge**: Used when two branches have diverged. A new "merge commit" is created to join the two histories.
-- **Squash Merge**: Combines all feature branch commits into a single commit for a cleaner history when merging into the base branch.
-
-Understanding the implications of each merge type is crucial for maintaining a coherent project history.
-
-## Important Concepts
-
-Other intermediate concepts of version control include:
-
-- **Pull Requests (PRs)**: PRs are a feature of hosting services like GitHub and GitLab. They let you tell others about changes you've pushed to a branch in a repository.
-- **Workflows**: Workflows like Gitflow and GitHub Flow offer structured methods for branching and merging that fit different types of projects and development cycles.
-- **Rebasing**: Rebasing is an alternative to merging, rewriting the commit history to produce a straight, linear progression of changes.
-- **Stashing**: Save uncommitted changes in a stack while you switch branches.
-
-By mastering these concepts, developers can collaborate more effectively and maintain a clean, functional codebase.
 
 <details>
   <Summary>Sources</Summary>

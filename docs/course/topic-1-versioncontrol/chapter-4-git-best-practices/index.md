@@ -1,13 +1,12 @@
 ---
-title: Chapter 3 - GIT Best Practices
+title: Chapter 4 - Git Best Practices
 layout: default
-parent: Topic 1 - Version Control & Cooperative Software Development
-has_children: true
+parent: Topic 1 - Cooperative Software Development
 has_toc: false
-nav_order: 2
+nav_order: 4
 ---
 
-# Chapter 3 - GIT Best Practices
+# Chapter 4 - GIT Best Practices
 
 ## Effective Documentation
 Proper documentation is key to the longevity and maintainability of software. You want to make sure if you abrubtly leave a project at any point, anyone else can pick it up without talking to you at all.
