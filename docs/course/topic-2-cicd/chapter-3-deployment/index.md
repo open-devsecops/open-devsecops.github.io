@@ -11,7 +11,7 @@ Transitioning from the exploration of DevOps and CI/CD, we now turn our attentio
 
 > **Problem Space**
 >
-> ⚠️ Imagine two developers are both working on projects for several months in a large organization. Ani is working on changing the current API used in the product, and Mariam is pulling from the current state of that API for her code. After working to get their projects working, they both push at the same time.
+> 🧐 Imagine two developers are both working on projects for several months in a large organization. Ani is working on changing the current API used in the product, and Mariam is pulling from the current state of that API for her code. After working to get their projects working, they both push at the same time.
 >
 > Narek, a long time user of their site, is looking to buy pants. All of a sudden, the site is down! This was because when Ani and Mariam pushed there was no automatic testing and there were several integration issues:
 >   - **Endpoint Mismatch**: Mariam's new features expect certain responses from the API that Ani has since altered or deprecated, leading to unexpected behavior and failures in feature operation.
@@ -23,12 +23,21 @@ Transitioning from the exploration of DevOps and CI/CD, we now turn our attentio
 
 
 ## Deployment Environments
-| Environment   | Purpose                                         | Characteristics                                                                            | CI/CD Role                                                                    |
-|:--------------|:------------------------------------------------|:-------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------|
-| 💻 Development| Initial coding and testing by developers.       | Runs on local machines or dev server, Frequent changes and updates, Connected to a test database, Debugging tools are enabled | Starting point in CI/CD process, Triggers initial build and unit tests       |
-| 🚦 Staging    | Final testing before going live. Acts as a pre-production replica. | Mimics production environment, Stable and isolated for testing, Hosts release candidate version | Used for performance, integration, and user acceptance testing, Final checks before production |
-| 🌐 Production | The live environment used by end-users.         | Most stable and secure, Contains real user data and faces the internet, Performance monitoring and error logging | Final stage of the pipeline, Code is deployed if all checks pass             |
 
+- **💻 Development Environment:**
+  - **Purpose:** Initial coding and testing by developers.
+  - **Characteristics:** Runs on local machines or dev server, frequent changes and updates, connected to a test database, debugging tools are enabled.
+  - **CI/CD Role:** Starting point in CI/CD process, triggers initial build and unit tests.
+
+- **🚦 Staging Environment:**
+  - **Purpose:** Final testing before going live. Acts as a pre-production replica.
+  - **Characteristics:** Mimics production environment, stable and isolated for testing, hosts release candidate version.
+  - **CI/CD Role:** Used for performance, integration, and user acceptance testing, final checks before production.
+
+- **🌐 Production Environment:**
+  - **Purpose:** The live environment used by end-users.
+  - **Characteristics:** Most stable and secure, contains real user data and faces the internet, performance monitoring and error logging.
+  - **CI/CD Role:** Final stage of the pipeline, code is deployed if all checks pass.
 
 <br>
 
@@ -36,7 +45,6 @@ Transitioning from the exploration of DevOps and CI/CD, we now turn our attentio
 _Source: [DevOps.com](/https://devops.com/i-want-to-do-continuous-deployment/)_
 
 ## Deployment Strategies
-
 Deployment strategies are crucial for managing the transition of code from development through to production. Choosing the right strategy ensures that deployments are smooth, risks are minimized, and the user experience remains uninterrupted. Here are some common deployment strategies used in modern software development:
 
 1. 🔄 **Blue-Green Deployment**: Alternating between two identical environments to switch versions.

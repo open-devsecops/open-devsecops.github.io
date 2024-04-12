@@ -9,7 +9,7 @@ nav_order: 2
 
 ## Problem Space
 
-⚠️ Imagine you are writing code for a project idea you have yourself. As your project begins to grow, you hire more developers.
+🧐 Imagine you are writing code for a project idea you have yourself. As your project begins to grow, you hire more developers.
 
 
 **Challenge:** With new developers on board, miscommunication and bottlenecks in deploying updates start to emerge. The cohesive understanding of the project diminishes.
