@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lab 2. Accessing Corporate Network and AWS ECR
-grand_parent: Topic 2 - CI/CD
+grand_parent: Topic 2 - DevOps
 parent: Chapter 1 - Containerization
 nav_order: 3
 ---

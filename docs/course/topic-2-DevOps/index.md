@@ -1,12 +1,12 @@
 ---
-title: Topic 2 - CI/CD
+title: Topic 2 - DevOps
 layout: default
 has_children: true
 has_toc: false
 nav_order: 3
 ---
 
-# Topic 2 - Continuous Integration / Continuous Deployment (CI/CD)
+# Topic 2 - Development & Operations (DevOps)
 
 | Chapter | Learning Objectives | Lab Description |
 |---------|---------------------|-----------------|

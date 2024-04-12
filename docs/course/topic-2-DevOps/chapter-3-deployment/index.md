@@ -1,7 +1,7 @@
 ---
 title: Chapter 3 - Deployment
 layout: default
-parent: Topic 2 - CI/CD
+parent: Topic 2 - DevOps
 has_toc: false
 nav_order: 3
 ---

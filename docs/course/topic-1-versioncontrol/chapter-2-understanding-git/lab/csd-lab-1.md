@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Quiz for Cooperative Software Development
-grand_parent: Topic 1 - Version Control
+grand_parent: Topic 1 - Cooperative Software Development
 parent: Cooperative Software Development
 nav_order: 1
 ---

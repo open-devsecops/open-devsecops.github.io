@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lab 1. Version Control and Branching
-grand_parent: Topic 1 - Version Control
+grand_parent: Topic 1 - Cooperative Software Development
 parent: Git
 nav_order: 1
 ---

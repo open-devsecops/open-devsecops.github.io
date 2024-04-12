@@ -1,7 +1,7 @@
 ---
 title: Chapter 1 - Containerization
 layout: default
-parent: Topic 2 - CI/CD
+parent: Topic 2 - DevOps
 has_children: true
 has_toc: false
 nav_order: 1

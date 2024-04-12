@@ -1,7 +1,7 @@
 ---
 title: Labs Overview
 layout: default
-grand_parent: Topic 2 - CI/CD
+grand_parent: Topic 2 - DevOps
 parent: Chapter 1 - Containerization
 nav_order: 1
 ---
