@@ -2,7 +2,7 @@
 layout: default
 title: Quiz for Cooperative Software Development
 grand_parent: Topic 1 - Cooperative Software Development
-parent: Cooperative Software Development
+parent: Chapter 2 - Git Fundamentals
 nav_order: 1
 ---
 
@@ -42,9 +42,9 @@ Answer the following five multiple-choice questions. Each question has four choi
    - C)
    - D)
 
-**Answer Key**:
-1) A
-2) C
-3) A
-4)
-5)
+<details>
+  <Summary>Answer Key</Summary>
+   1. A <br>
+   2. C <br>
+   3. A
+</details>

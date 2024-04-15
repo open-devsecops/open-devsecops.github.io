@@ -17,3 +17,6 @@ callouts:
   info:
     title: Info
     color: blue
+  definition:
+    title: Definition
+    color: purple

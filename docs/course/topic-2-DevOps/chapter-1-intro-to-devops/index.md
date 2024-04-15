@@ -1,12 +1,12 @@
 ---
-title: Chapter 2 - Automation
+title: Chapter 1 - Intro to DevOps
 layout: default
 parent: Topic 2 - DevOps
-has_children: true
+has_children: false
 has_toc: false
-nav_order: 2
+nav_order: 1
 ---
-
+# Introduction to DevOps
 ## Problem Space
 
 🧐 Imagine you are writing code for a project idea you have yourself. As your project begins to grow, you hire more developers.
@@ -227,125 +227,11 @@ In many companies, Development and Operations teams work independently, leading 
 - **Collecting & Measuring Data**
 - **Continuous Feedback**
 
-<h2>What is CI/CD?</h2>
-
-<p>CI/CD, short for <strong>Continuous Integration and Continuous Delivery</strong>, is a part of the DevOps process. “It is a collection of principles and practices designed to help development teams ensure the reliable delivery of frequent code changes.”</p>
-
-<div style="text-align: center;">
-    <img src="https://www.mindtheproduct.com/wp-content/uploads/2015/12/409-images-for-snap-blog-postedit_image3-auto.png" alt="CI/CD Lifecycle" style="max-width: 50%; height: auto; margin: 0 auto;">
-    <p><em>Source: <a href="http://www.mindtheproduct.com/what-the-hell-are-ci-cd-and-devops-a-cheatsheet-for-the-rest-of-us/">Mind The Product</a></em></p>
-
-</div>
-
-## DevOps vs. CI/CD
-<!-- 
-<style>
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-  }
-  th, td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-  }
-  th {
-    background-color: #333;
-    color: #fff;
-  }
-  th:last-child,
-  td:last-child {
-    border-right: none;
-  }
-  ul {
-    list-style-type: disc;
-    margin-top: 0;
-    padding-left: 20px; /* Adjusted padding for the bullets */
-  }
-  ul li {
-    margin-bottom: 5px;
-  }
-</style>
--->
-<table>
-  <tr>
-    <th>Category</th>
-    <th>DevOps</th>
-    <th>CI</th>
-    <th>CD</th>
-  </tr>
-  <tr>
-    <td><strong>Purpose</strong></td>
-    <td>Facilitate collaboration and efficiency across the development lifecycle.</td>
-    <td>Automate testing to ensure code compatibility.</td>
-    <td>Automate deployment for seamless software releases.</td>
-  </tr>
-  <tr>
-    <td><strong>Methods</strong></td>
-    <td>
-      <ul>
-        <li>Implement automation to streamline collaboration between development and operations teams.</li>
-        <li>Use infrastructure as code (IaC) to provision and manage infrastructure.</li>
-        <li>Integrate continuous feedback loops to gather insights from stakeholders and improve processes iteratively.</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Automate the build and testing process for every code change.</li>
-        <li>Identify integration issues early in the development lifecycle.</li>
-        <li>Support the principle of "fail fast" by providing rapid feedback to developers.</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Encompass both Continuous Integration and Continuous Deployment.</li>
-        <li>Automate the deployment process to production environments.</li>
-        <li>Enable organizations to release software updates quickly and reliably while minimizing risks.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td><strong>Key Benefits</strong></td>
-    <td>
-      <ul>
-        <li>Promotes a culture of shared responsibility and accountability.</li>
-        <li>Emphasizes the importance of automating repetitive tasks to reduce manual errors and increase efficiency.</li>
-        <li>Focuses on delivering value to customers through rapid and iterative development cycles.</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Increases code quality by identifying issues early in the development process.</li>
-        <li>Speeds up the development cycle by automating build and testing processes.</li>
-        <li>Enables rapid feedback to developers for quick iterations.</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Accelerates time to market by automating deployment processes.</li>
-        <li>Minimizes risks associated with manual deployments.</li>
-        <li>Enhances overall software reliability and stability.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-### References
-
-**1.** Writer, Hossein Ashtari Technical, et al. “Key Differences between CI/CD and DevOps.” *Spiceworks*, [www.spiceworks.com/tech/devops/articles/cicd-vs-devops/](http://www.spiceworks.com/tech/devops/articles/cicd-vs-devops/). Accessed 20 Feb. 2024. 
-
-**2.** “The Importance of Scalability in Software Design.” *Concepta Tech*, [www.conceptatech.com/blog/importance-of-scalability-in-software-design](http://www.conceptatech.com/blog/importance-of-scalability-in-software-design). Accessed 20 Feb. 2024. 
-
-**3.** “Why Is There a Divide between Dev and Ops?” *CloudBees*, [www.cloudbees.com/blog/why-there-divide-between-dev-and-ops](http://www.cloudbees.com/blog/why-there-divide-between-dev-and-ops). Accessed 20 Feb. 2024. 
-
-**4.** Charboneau, Tyler. “What Is Devops?” *Orange Matter*, 9 Aug. 2023, [orangematter.solarwinds.com/2022/03/21/what-is-devops/](http://orangematter.solarwinds.com/2022/03/21/what-is-devops/). 
-
-**5.** “Six Pillars of Devsecops Series.” *CSA*, [cloudsecurityalliance.org/blog/2021/09/09/six-pillars-of-devsecops-series](http://cloudsecurityalliance.org/blog/2021/09/09/six-pillars-of-devsecops-series). Accessed 20 Feb. 2024. 
-
-**6.** *Mind the Product - Conferences, Training, and Content for the World’s Largest Community of Product Managers, Designers, and Developers.*, [www.mindtheproduct.com/what-the-hell-are-ci-cd-and-devops-a-cheatsheet-for-the-rest-of-us/](http://www.mindtheproduct.com/what-the-hell-are-ci-cd-and-devops-a-cheatsheet-for-the-rest-of-us/) . Accessed 20 Feb. 2024. 
-
-**7.** Ferringer, Megan. “Here’s the Difference between CI/CD and Devops-and How They Work Together to Drive Innovation.” *Navisite*, 2 Mar. 2023, [www.navisite.com/blog/insights/ci-cd-vs-devops/](http://www.navisite.com/blog/insights/ci-cd-vs-devops/) .
-
+### References 
+<details>
+  <Summary>Expand</Summary>
+    <b>1.</b> “The Importance of Scalability in Software Design.” <i>Concepta Tech</i>, <a href="http://www.conceptatech.com/blog/importance-of-scalability-in-software-design" target="_blank">www.conceptatech.com/blog/importance-of-scalability-in-software-design</a>. Accessed 20 Feb. 2024.<br>
+    <b>2.</b> “Why Is There a Divide between Dev and Ops?” <i>CloudBees</i>, <a href="http://www.cloudbees.com/blog/why-there-divide-between-dev-and-ops" target="_blank">www.cloudbees.com/blog/why-there-divide-between-dev-and-ops</a>. Accessed 20 Feb. 2024.<br>
+    <b>3.</b> Charboneau, Tyler. “What Is Devops?” <i>Orange Matter</i>, 9 Aug. 2023, <a href="http://orangematter.solarwinds.com/2022/03/21/what-is-devops/" target="_blank">orangematter.solarwinds.com/2022/03/21/what-is-devops/</a>.<br>
+    <b>4.</b> “Six Pillars of Devsecops Series.” <i>CSA</i>, <a href="http://cloudsecurityalliance.org/blog/2021/09/09/six-pillars-of-devsecops-series" target="_blank">cloudsecurityalliance.org/blog/2021/09/09/six-pillars-of-devsecops-series</a>. Accessed 20 Feb. 2024.<br>
+</details>

@@ -4,7 +4,7 @@ layout: default
 parent: Topic 3 - DevSecOps
 has_children: true
 has_toc: false
-nav_order: 1
+nav_order: 2
 ---
 
 # Chapter 2 - Security Checks in CD/CD

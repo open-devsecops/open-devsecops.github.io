@@ -1,12 +1,12 @@
 ---
 title: Chapter 4 - Git Best Practices
 layout: default
-parent: Topic 1 - Cooperative Software Development
+parent: Topic 1 - Git
 has_toc: false
 nav_order: 4
 ---
 
-# Chapter 4 - GIT Best Practices
+# Chapter 4 - Git Best Practices
 
 ## Effective Documentation
 Proper documentation is key to the longevity and maintainability of software. You want to make sure if you abrubtly leave a project at any point, anyone else can pick it up without talking to you at all.
@@ -22,9 +22,11 @@ Proper documentation is key to the longevity and maintainability of software. Yo
   - Well-placed comments within the code can clarify complex algorithms, decision-making, or reasons for significant changes.
   - Use comments to explain the *why*, not the *what* — the code speaks for itself on the latter.
 
+
+### References 
 <details>
-  <Summary>Sources</Summary>
-  1. https://github.com/jamiebuilds/documentation-handbook <br>
-  2. https://dev.to/maddy/how-to-write-the-perfect-documentation-for-your-github-project-4k38 <br>
-  3. https://stepsize.com/blog/the-engineers-guide-to-writing-code-comments 
+  <Summary>Expand</Summary>
+    <b>1.</b> Jamiebuilds. “Jamiebuilds/Documentation-Handbook: How to Write High-Quality Friendly Documentation That People Want to Read.” <i>GitHub</i>, <a href="https://github.com/jamiebuilds/documentation-handbook" target="_blank">github.com/jamiebuilds/documentation-handbook</a>. Accessed 15 Apr. 2024.<br>
+    <b>2.</b> Maddy. “How to Write the Perfect Documentation for Your GitHub Project.” <i>DEV Community</i>, 11 July 2023, <a href="https://dev.to/maddy/how-to-write-the-perfect-documentation-for-your-github-project-4k38" target="_blank">dev.to/maddy/how-to-write-the-perfect-documentation-for-your-github-project-4k38</a> <br>
+    <b>3.</b> “The Engineer’s Guide to Writing Meaningful Code Comments.” <i>Stepsize CollabGPT: AI Collaboration for Software Teams. Daily Standups and More.</i>, <a href="https://stepsize.com/blog/the-engineers-guide-to-writing-code-comments" target="_blank">stepsize.com/blog/the-engineers-guide-to-writing-code-comments</a>. Accessed 15 Apr. 2024.<br>
 </details>

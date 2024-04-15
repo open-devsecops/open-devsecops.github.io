@@ -1,10 +1,10 @@
 ---
-title: Chapter 1 - Containerization
+title: Chapter 3 - Containerization
 layout: default
 parent: Topic 2 - DevOps
 has_children: true
 has_toc: false
-nav_order: 1
+nav_order: 3
 ---
 
 ## Definition of Containerization

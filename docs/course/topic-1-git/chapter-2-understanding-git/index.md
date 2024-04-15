@@ -1,14 +1,17 @@
 ---
 title: Chapter 2 - Git Fundamentals
 layout: default
-parent: Topic 1 - Cooperative Software Development
+parent: Topic 1 - Git
 has_toc: false
+has_children: false
 nav_order: 2
 ---
 
-# Fundamentals 
-### What is a repository?
-Repositories are like digital libraries where all the files for a specific project are stored. It is the central hub where the creator of the repository (also known as a repo) can decide who can edit and view the files. In GitHub you can create as many repositories as you want and you will be able to control the structure and workflow you want for your project or organization. 
+# Git Fundamentals 
+## What is a repository?
+
+{: .definition}
+> Repositories are like digital libraries where all the files for a specific project are stored. It is the central hub where the creator of the repository (also known as a repo) can decide who can edit and view the files. In GitHub you can create as many repositories as you want and you will be able to control the structure and workflow you want for your project or organization. 
 
 ### Creating & Editing a New Repository
 Everything that is done to create or edit a repository can be done on the site itself, or through your terminal! To learn how to create or edit one, see the following GitHub Documentation:
@@ -76,7 +79,12 @@ Creating a branch in Git is a fast and simple operation because it doesn't copy 
 By using branches, you can manage the development of new features, fixes, and updates in a structured and organized manner, allowing for a smoother and more controlled workflow.
 
 
-
+### References
 <details>
-  <Summary>Sources</Summary>
+  <summary>Expand</summary>
+    <b>1.</b> “About Repositories.” <i>GitHub Docs</i>, <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories" target="_blank">docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories</a>. Accessed 15 Apr. 2024.<br>
+    <b>2.</b> “What Is a Git Repository?: Beginner Git Tutorial.” <i>GitKraken</i>, 17 Mar. 2023, <a href="https://www.gitkraken.com/learn/git/tutorials/what-is-a-git-repository" target="_blank">www.gitkraken.com/learn/git/tutorials/what-is-a-git-repository</a>.<br>
+    <b>3.</b> Git Cheat Sheet, <a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank">education.github.com/git-cheat-sheet-education.pdf</a>. Accessed 15 Apr. 2024.<br>
+    <b>4.</b> “3.1 Git Branching - Branches in a Nutshell.” <i>Git</i>, <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell" target="_blank">git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell</a>. Accessed 15 Apr. 2024.<br>
+    <b>5.</b> “Git & Github Tutorial for Beginners #8 - Branches.” <i>YouTube</i>, YouTube, 14 June 2017, <a href="https://www.youtube.com/watch?v=QV0kVNvkMxc" target="_blank">www.youtube.com/watch?v=QV0kVNvkMxc</a>.<br>
 </details>

@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Lab 1. Version Control and Branching
-grand_parent: Topic 1 - Cooperative Software Development
-parent: Git
+grand_parent: Topic 1 - Git
+parent: Chapter 3 - Git Intermediate Concepts
 nav_order: 1
 ---
 

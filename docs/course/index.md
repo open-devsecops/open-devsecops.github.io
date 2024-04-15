@@ -6,19 +6,69 @@ nav_order: 1
 ---
 
 ## Course Overview 📖
-### Topic 1 - Version Control
-- Chapter 1 Version Control * 
-- Chapter 2 Cooperative Software Development *
-### Topic 2 - CI/CD
-- Chapter 1 Containerization *
-- Chapter 2 Automation *
-- Chapter 3 Deployment
-- Chapter 4 Automated Tests
-### Topic 3 - DevSecOps
-- Chapter 1 DevSecOps *
-- Chapter 2 Security Checks in CI/CD
 
-> "*" Means this chapter has an interactive lab!
+<table border="1" style="width:100%; border-collapse: collapse; font-family: Arial, sans-serif;">
+    <thead>
+        <tr style="background-color: #f2f2f2; color: black;">
+            <th style="border: 2px solid black;">Topic</th>
+            <th style="border: 2px solid black;">Chapter and Title</th>
+            <th style="border: 2px solid black;">Interactive Lab</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="4" style="vertical-align: middle; text-align: center; font-weight: bold; background-color: rgba(187, 219, 254, 0.5); border: 2px solid black;">Git</td>
+            <td style="border: 2px solid black;">Chapter 1: Version Control</td>
+            <td style="text-align: center; border: 2px solid black;"></td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">Chapter 2: Git Fundamentals</td>
+            <td style="text-align: center; border: 2px solid black;"></td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">Chapter 3: Git Intermediate Concepts</td>
+            <td style="text-align: center; background-color: #c8e6c9; color: #388e3c; font-weight: bold; border: 2px solid black;">Yes</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">Chapter 4: Git Best Practices</td>
+            <td style="text-align: center; border: 2px solid black;"></td>
+        </tr>
+        <tr>
+            <td rowspan="6" style="vertical-align: middle; text-align: center; font-weight: bold; background-color: rgba(190, 188, 252, 0.5); border: 2px solid black;">DevOps</td>
+            <td style="border: 2px solid black;">Chapter 1: Intro to DevOps</td>
+            <td style="text-align: center; border: 2px solid black;"></td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">Chapter 2: Intro to CI/CD</td>
+            <td style="text-align: center; border: 2px solid black;"></td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">Chapter 3: Containerization</td>
+            <td style="text-align: center; background-color: #c8e6c9; color: #388e3c; font-weight: bold; border: 2px solid black;">Yes</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">Chapter 4: Webhooks</td>
+            <td style="text-align: center; border: 2px solid black;"></td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">Chapter 5: Automated Tests</td>
+            <td style="text-align: center; border: 2px solid black;"></td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">Chapter 6: Deployment</td>
+            <td style="text-align: center; background-color: #c8e6c9; color: #388e3c; font-weight: bold; border: 2px solid black;">Yes</td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="vertical-align: middle; text-align: center; font-weight: bold; background-color: rgba(195, 125, 248, 0.5); border: 2px solid black;">DevSecOps</td>
+            <td style="border: 2px solid black;">Chapter 1: DevSecOps</td>
+            <td style="text-align: center; background-color: #c8e6c9; color: #388e3c; font-weight: bold; border: 2px solid black;">Yes</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">Chapter 2: Security Checks in CI/CD</td>
+            <td style="text-align: center; border: 2px solid black;"></td>
+        </tr>
+    </tbody>
+</table>
 
 ## What is DevSecOps and CI/CD? 🔍
 **DevSecOps** is an integration of **development** (Dev), **security** (Sec), and **operations** (Ops) practices. It's a cultural shift that emphasizes security as a fundamental part of the software development lifecycle. By introducing security early in the development process, DevSecOps ensures that it's a shared responsibility and not just an afterthought.<sup>1-3</sup>
