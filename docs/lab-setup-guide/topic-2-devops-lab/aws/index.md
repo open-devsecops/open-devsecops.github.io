@@ -18,10 +18,10 @@ Before setting up the infrastructure for the CI/CD labs on AWS, ensure that you 
 
 | Name       | Purpose  | Installation Guide |
 | ---------- | -------- | ------------------ |
-| AWS CLI    | To interact with Amazon Web Services. | [Guide Link](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){: .btn .btn-purple } |
-| Terraform  | To provision AWS Infrastructure consistently and programmatically. | [Guide Link](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli){: .btn .btn-purple } |
-| Git        | To clone the infrastructure scripts. | [Guide Link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){: .btn .btn-purple } |
-| WireGuard Client | To access internal services. | [Guide Link](https://www.wireguard.com/install/){: .btn .btn-purple } |
+| AWS CLI    | To interact with Amazon Web Services. | [Guide Link](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){: .btn .btn-purple .btn-fill } |
+| Terraform  | To provision AWS Infrastructure consistently and programmatically. | [Guide Link](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli){: .btn .btn-purple .btn-fill } |
+| Git        | To clone the infrastructure scripts. | [Guide Link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){: .btn .btn-purple .btn-fill } |
+| WireGuard Client | To access internal services. | [Guide Link](https://www.wireguard.com/install/){: .btn .btn-purple .btn-fill } |
 
 
 ### Other Requirements
@@ -91,11 +91,32 @@ terraform apply
 
 | Output Name | Description | Usage |
 | ----------- | ----------- | ----- |
-| SSH	      | SSH command to access the EC2 instance.	| Use this command to SSH into the EC2 instance for administrative tasks or troubleshooting. |
-| ec2_public_ip | The public IP address of the EC2 instance. | Needed to access various web interfaces for the lab, such as downloading VPN configurations, accessing Jenkins, etc. |
+| **SSH**	      | SSH command to access the EC2 instance.	| Use this command to SSH into the EC2 instance for administrative tasks or troubleshooting. |
+| **ec2_public_ip** | The public IP address of the EC2 instance. | Needed to access various web interfaces for the lab, such as downloading VPN configurations, accessing Jenkins, etc. |
 
 {: .warning }
 **Please allow sufficient time for tools to install.** After Terraform successfully provisions the AWS resources, it typically takes about 5 minutes for all software tools to be fully installed and operational on the provisioned resources. You can verify completion by entering in the terminal `[ssh command] -f "grep 'Lab Infrastructure Provisioning Complete' /var/log/cloud-init-output.log"`.
+
+
+### Example Output
+
+```bash
+aws_subnet.lab_public_subnet: Creation complete after 1s 
+aws_route_table.lab_public_route_table: Creation complete after 1s
+aws_route_table_association.lab_pub_sub_rt: Creating...
+aws_route_table_association.lab_pub_sub_rt: Creation complete after 1s
+aws_security_group.lab: Creation complete after 2s
+aws_instance.topic-2-lab: Creating...
+aws_instance.topic-2-lab: Still creating... [10s elapsed]
+aws_instance.topic-2-lab: Creation complete after 13s
+
+Apply complete! Resources: 16 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+SSH = "ssh -i topic-2-cicd-lab-key.pem ubuntu@54.176.55.245"
+ec2_public_ip = "54.176.55.245"
+```
 
 <hr>
 

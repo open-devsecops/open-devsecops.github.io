@@ -10,4 +10,4 @@ has_toc: false
 
 | Cloud Vendor | Setup Guide Link |
 | ------------ | ---------------- |
-| AWS | [CI/CD Infrastructure Setup on AWS](./aws/) |
+| AWS | [DevOps Infrastructure Setup on AWS](./aws/) |

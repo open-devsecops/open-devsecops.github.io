@@ -24,26 +24,15 @@
 
 {% if _content contains '<pre class="highlight">' %}
   {% assign _content = _content
-    | replace: '<div class="highlight"><pre class="highlight"><code', '<div class="highlight"><code'
-    | replace: '</code></pre></div>', '</code></div>'
-  %}
-{% endif %}
-
-<!-- Change the icon of checkbox -->
-
-{% if _content contains '<input type="checkbox"' %}
-  {% assign _content = _content
-    | replace: '<input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />',
-      '<i class="fas fa-check-circle fa-fw checked"></i>'
-    | replace: '<input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />',
-      '<i class="far fa-circle fa-fw"></i>'
+    | replace: '<div class="highlight"><pre class="highlight"><code', '<div class="highlight"><pre><code'
+    | replace: '</code></pre></div>', '</code></pre></div>'
   %}
 {% endif %}
 
 <!-- Add header for code snippets -->
 
-{% if _content contains '<div class="highlight"><code>' %}
-  {% assign _code_spippets = _content | split: '<div class="highlight"><code>' %}
+{% if _content contains '<div class="highlight"><pre><code>' %}
+  {% assign _code_spippets = _content | split: '<div class="highlight"><pre><code>' %}
   {% assign _new_content = '' %}
 
   {% for _snippet in _code_spippets %}
@@ -71,7 +60,7 @@
         | append: '<div class="code-header">'
         | append: _label
         | append: '<div></div></div>'
-        | append: '<div class="highlight"><code>'
+        | append: '<div class="highlight"><pre><code>'
       %}
     {% endif %}
   {% endfor %}
