@@ -35,8 +35,11 @@ Before setting up the infrastructure for the CI/CD labs on AWS, ensure that you 
 1. Log into your AWS Management Console.
 2. Navigate to `IAM > Users`.
 3. Click `Create user`.
+![aws iam page](./assets/aws-iam.png)
 4. Enter the desired user name, click next, and attach the `AdministratorAccess` policy.
-5. Click on the new user that you created, navigate to the `Security credentials` tab, and click `Create access key`.
+![aws iam permissions page](./assets/aws-iam-perm.png)
+5. After creation, click on the new user and navigate to the `Security credentials` tab, and click `Create access key`.
+![aws iam permissions page](./assets/aws-iam-access.png)
 6. Generate a new access key for the Command Line Interface user case. Make sure to save these credentials securely.
 
 ### Configure the AWS CLI
@@ -47,6 +50,8 @@ aws configure
 ```
 3. Enter the Access Key ID and Secret Access Key when prompted.
 4. Specify the default region (e.g., `us-west-1`). This should be the region where you will deploy the resources.
+
+<hr>
 
 ## Setting Up the Infrastructure with Terraform
 With the AWS CLI configured, the next step is to set up the actual lab infrastructure using Terraform. Terraform will allow you to automate the deployment of all required AWS resources.
@@ -92,6 +97,8 @@ terraform apply
 {: .warning }
 **Please allow sufficient time for tools to install.** After Terraform successfully provisions the AWS resources, it typically takes about 5 minutes for all software tools to be fully installed and operational on the provisioned resources. You can verify completion by entering in the terminal `[ssh command] -f "grep 'Lab Infrastructure Provisioning Complete' /var/log/cloud-init-output.log"`.
 
+<hr>
+
 ## Accessing Internal Services
 
 ### Use the VPN Config Generator
@@ -103,6 +110,7 @@ terraform apply
 5. Access internal services such as `http://dashboard.internal` or `http://jenkins.internal`.
 ![dashboard page](./assets/dashboard.png)
 
+<hr>
 
 ## Configuring Jenkins
 Once your infrastructure is ready and you have connected to the internal network via VPN, you can proceed to set up Jenkins for the DevOps labs.
