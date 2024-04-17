@@ -21,6 +21,7 @@ Before setting up the infrastructure for the CI/CD labs on AWS, ensure that you 
 | AWS CLI    | To interact with Amazon Web Services. | [Guide Link](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){: .btn .btn-purple } |
 | Terraform  | To provision AWS Infrastructure consistently and programmatically. | [Guide Link](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli){: .btn .btn-purple } |
 | Git        | To clone the infrastructure scripts. | [Guide Link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){: .btn .btn-purple } |
+| WireGuard Client | To access internal services. | [Guide Link](https://www.wireguard.com/install/){: .btn .btn-purple } |
 
 
 ### Other Requirements
@@ -90,3 +91,14 @@ terraform apply
 
 {: .warning }
 **Please allow sufficient time for tools to install.** After Terraform successfully provisions the AWS resources, it typically takes about 5 minutes for all software tools to be fully installed and operational on the provisioned resources. You can verify completion by entering in the terminal `[ssh command] -f "grep 'Lab Infrastructure Provisioning Complete' /var/log/cloud-init-output.log"`.
+
+## Accessing Internal Services
+
+### Use the VPN Config Generator
+1. Navigate to the VPN Config Generator at `https://{ec2_public_ip}`. Replace `{ec2_public_ip}` with the actual public IP address output by Terraform.
+![vpn-config page](./assets/vpn-config.png)
+2. Download the VPN Configuration file
+3. Import the VPN Configuration file into your WireGuard client.
+4. Activate the VPN connection using WireGuard to securely connect to the internal network.
+5. Access internal services such as `http://dashboard.internal` or `http://jenkins.internal`.
+![dashboard page](./assets/dashboard.png)
