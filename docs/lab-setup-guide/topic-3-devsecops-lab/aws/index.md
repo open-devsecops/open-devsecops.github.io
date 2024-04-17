@@ -6,4 +6,4 @@ parent: Topic 3 - DevSecOps
 has_toc: false
 ---
 
-# Topic 3 - DevSecOps Lab Setup Guide on AWS
+# DevSecOps Lab Setup Guide on AWS

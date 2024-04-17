@@ -6,6 +6,6 @@ parent: Lab Infrastructure Setup Guide
 has_toc: false
 ---
 
-# Topic 3 - DevSecOps Lab Infrastructure Setup Guide Overview
+# DevSecOps Lab Infrastructure Setup Guide Overview
 
 ## Introduction

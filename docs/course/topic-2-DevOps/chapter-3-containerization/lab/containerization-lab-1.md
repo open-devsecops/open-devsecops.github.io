@@ -6,7 +6,7 @@ parent: Chapter 3 - Containerization
 nav_order: 2
 ---
 
-## Learning Objectivesss
+## Learning Objectives
 - Create a Docker image of a React application
 - Run the Docker image locally
 - Interact with a running Docker container

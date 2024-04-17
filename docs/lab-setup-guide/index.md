@@ -17,7 +17,7 @@ These labs are designed to give students hands-on experience with real-world too
 ## Infrastructure Setup Guides by Topic
 Please follow the links to access detailed instructions for setting up the lab environment for each topic.
 
-| Topic Name | Cloud Vendor | Setup Guide Link |
-| ---------- | ------------ | ---------------- |
-| Topic 2: CI/CD | AWS | [CI/CD Infrastructure Setup on AWS](./topic-2-cicd-lab/aws/) |
-| Topic 3: DevSecOps | AWS | [DevSecOps Infrastructure Setup on AWS](./topic-3-devsecops-lab/aws/) |
+| Topic Name | Chapters | Cloud Vendors | Setup Guide Link |
+| ---------- | -------- | ------------ | ---------------- |
+| Topic 2 - DevOps | `Chapter 3 - Containerization` `Chapter 6 - Deployment` | AWS | [DevOps Infrastructure Setup Overview](./topic-2-devops-lab/) |
+| Topic 3 - DevSecOps | `Chapter 2 - DevSecOps` | AWS | [DevSecOps Infrastructure Setup Overview](./topic-3-devsecops-lab/) |
