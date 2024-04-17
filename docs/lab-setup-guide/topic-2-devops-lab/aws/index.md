@@ -41,9 +41,42 @@ Before setting up the infrastructure for the CI/CD labs on AWS, ensure that you 
 ### Configure the AWS CLI
 1. Open your terminal.
 2. Run the following command:
-
 ```bash
 aws configure
 ```
 3. Enter the Access Key ID and Secret Access Key when prompted.
 4. Specify the default region (e.g., `us-west-1`). This should be the region where you will deploy the resources.
+
+## Setting Up the Infrastructure with Terraform
+With the AWS CLI configured, the next step is to set up the actual lab infrastructure using Terraform. Terraform will allow you to automate the deployment of all required AWS resources.
+
+### Clone the Infrastructure Setup Scripts
+1. Open your terminal.
+2. Run the following command to clone the lab infrastructure setup repository. This repository contains all the necessary Terraform scripts for various lab topics.
+```bash
+git clone https://github.com/open-devsecops/lab-infra-setup.git
+```
+
+3. Change into the directory containing the Terraform scripts for Topic 3 DevOps lab:
+```bash
+cd lab-infra-setup/topic-2-devops/aws
+```
+
+### Initialize Terraform
+1. Within the Topic 2 - DevOps directory, initialize Terraform to install necessary providers and set up your environment.
+2. In the terminal, enter the following:
+```bash
+terraform init
+```
+
+3. Before applying any changes, review what Terraform intends to do. This command will show you a list of resources that Terraform plans to create.
+```bash
+terraform plan
+```
+
+4. Apply the configuration to begin provisioning the AWS resources.
+```bash
+terraform apply
+```
+
+5. After Terraform successfully applies the configuration, it will output important information such as public IPs, or other commands and other data needed to access your resources.
