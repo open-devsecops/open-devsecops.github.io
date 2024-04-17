@@ -79,4 +79,14 @@ terraform plan
 terraform apply
 ```
 
-5. After Terraform successfully applies the configuration, it will output important information such as public IPs, or other commands and other data needed to access your resources.
+5. When prompted to `Enter a value:`, enter `yes`.
+
+6. After Terraform successfully applies the configuration, it will output important information such as public IPs, or other commands and other data needed to access your resources.
+
+| Output Name | Description | Usage |
+| ----------- | ----------- | ----- |
+| SSH	      | SSH command to access the EC2 instance.	| Use this command to SSH into the EC2 instance for administrative tasks or troubleshooting. |
+| ec2_public_ip | The public IP address of the EC2 instance. | Needed to access various web interfaces for the lab, such as downloading VPN configurations, accessing Jenkins, etc. |
+
+{: .warning }
+**Please allow sufficient time for tools to install.** After Terraform successfully provisions the AWS resources, it typically takes about 5 minutes for all software tools to be fully installed and operational on the provisioned resources. You can verify completion by entering in the terminal `[ssh command] -f "grep 'Lab Infrastructure Provisioning Complete' /var/log/cloud-init-output.log"`.
