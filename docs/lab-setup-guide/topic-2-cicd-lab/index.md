@@ -7,3 +7,5 @@ has_toc: false
 ---
 
 # Topic 2 - CI/CD Lab Infrastructure Setup Guide Overview
+
+## Introduction
