@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: custom
 title: Lab 1. Containerizing a React Application
 grand_parent: Topic 2 - DevOps
 parent: Chapter 3 - Containerization

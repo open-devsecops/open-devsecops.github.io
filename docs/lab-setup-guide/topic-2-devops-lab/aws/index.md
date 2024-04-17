@@ -1,6 +1,6 @@
 ---
 title: AWS
-layout: default
+layout: custom
 grand_parent: Lab Infrastructure Setup Guide
 parent: Topic 2 - DevOps
 has_toc: false

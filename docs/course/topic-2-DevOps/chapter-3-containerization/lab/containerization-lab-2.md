@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: custom
 title: Lab 2. Accessing Corporate Network and AWS ECR
 grand_parent: Topic 2 - DevOps
 parent: Chapter 3 - Containerization
