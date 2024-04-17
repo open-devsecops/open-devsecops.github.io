@@ -102,3 +102,21 @@ terraform apply
 4. Activate the VPN connection using WireGuard to securely connect to the internal network.
 5. Access internal services such as `http://dashboard.internal` or `http://jenkins.internal`.
 ![dashboard page](./assets/dashboard.png)
+
+
+## Configuring Jenkins
+Once your infrastructure is ready and you have connected to the internal network via VPN, you can proceed to set up Jenkins for the DevOps labs.
+
+1. Navigate to `http://jenkins.internal` in your web browser.
+![jenkins unlock page](./assets/unlock-jenkins.png)
+2. To unlock Jenkins and begin setup, you need the initial admin password. Use the command below to retrieve this.
+```bash
+[ssh command] -f "sudo docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword"
+```
+3. Back in your web browser on the Jenkins unlock page, enter the initial admin password you retrieved to unlock 4. Select the option to Select Plugins to Install.
+5. Choose GitHub from the list of available plugins.
+6. Click Install to start the plugin installation process.
+7. Once the plugin installation is complete, proceed to the Create First Admin User step.
+8. Fill out the form with the admin username, password.
+9. On the Instance Configuration page, ensure the Jenkins URL is set to http://jenkins.internal/. This should be populated automatically.
+10. Click Save and Finish.
