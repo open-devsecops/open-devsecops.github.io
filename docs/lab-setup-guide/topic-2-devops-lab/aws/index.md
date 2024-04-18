@@ -143,6 +143,8 @@ Once your infrastructure is ready and you have connected to the internal network
 [ssh command] -f "sudo docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword"
 ```
 3. Back in your web browser on the Jenkins unlock page, enter the initial admin password you retrieved to unlock 4. Select the option to Select Plugins to Install.
+![jenkins install plugins page](./assets/customize-jenkins.png)
+
 5. Choose GitHub from the list of available plugins.
 6. Click Install to start the plugin installation process.
 7. Once the plugin installation is complete, proceed to the Create First Admin User step.
