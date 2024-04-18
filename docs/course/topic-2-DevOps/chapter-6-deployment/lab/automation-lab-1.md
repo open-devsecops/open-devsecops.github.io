@@ -1,6 +1,6 @@
 ---
 title: Lab 1. Configuring a Simple Jenkins Pipeline
-layout: default
+layout: custom
 grand_parent: Topic 2 - DevOps
 parent: Chapter 6 - Deployment
 nav_order: 2

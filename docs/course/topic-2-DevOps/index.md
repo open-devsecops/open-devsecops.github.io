@@ -1,6 +1,6 @@
 ---
 title: Topic 2 - DevOps
-layout: default
+layout: custom
 has_children: true
 has_toc: false
 nav_order: 3

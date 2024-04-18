@@ -1,6 +1,6 @@
 ---
 title: Chapter 3 - Git Intermediate Concepts
-layout: default
+layout: custom
 parent: Topic 1 - Git
 has_children: true
 has_toc: false

@@ -3,9 +3,11 @@ description: 'From Classroom to Industry: Bridging the DevSecOps Knowledge Gap w
 theme: just-the-docs
 
 url: https://open-devsecops.github.io
+search_enabled: false
 
 aux_links:
   Github: https://github.com/open-devsecops
+  Contribute: https://github.com/open-devsecops/open-devsecops.github.io
 
 callouts:
   important:

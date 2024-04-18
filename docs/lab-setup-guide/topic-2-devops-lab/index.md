@@ -1,6 +1,6 @@
 ---
 title: Topic 2 - DevOps
-layout: default
+layout: custom
 has_children: true
 parent: Lab Infrastructure Setup Guide
 has_toc: false

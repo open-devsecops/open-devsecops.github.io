@@ -1,6 +1,6 @@
 ---
 title: Chapter 2 - Security Checks in CD/CD
-layout: default
+layout: custom
 parent: Topic 3 - DevSecOps
 has_children: true
 has_toc: false
@@ -37,47 +37,15 @@ The stages of SDLC can also be referred as the 6 stages:
 5. Release
 6. Deployment/Maintenance
 
+![CI/CD Pipeline](https://qentelli.com/sites/default/files/inline-images/devsecops-pipeline-inside-image.png)
 
 <div style="text-align: center;">
-    <img src="https://qentelli.com/sites/default/files/inline-images/devsecops-pipeline-inside-image.png" alt="CI/CD Pipeline" style="max-width:100%;height:auto;"/>
     <p><em>Source: <a href="https://qentelli.com/thought-leadership/insights/devsecops-pipeline-factors">Qentelli</a></em></p>
 </div>
 
 Due to the nature of continuous integration, every change needs to be monitored and made sure that it's safe to release. For every stage, there are multiple different controls that can be embedded to the process, whereas tool integrations are not sufficient by themselves for a secure CI/CD pipeline. Tools must be implemented to support the process mentioned above, but it's important to understand which tools to use and when. Understanding **SAST testing vs. DAST testing** espscially during the build stages will help ensure a secure SDLC.
 
 ## SAST vs. DAST
-<!-- 
-<style>
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-  }
-  th, td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-  }
-  th {
-    background-color: #333;
-    color: #fff;
-  }
-  th:last-child,
-  td:last-child {
-    border-right: none;
-  }
-  ul {
-    list-style-type: disc;
-    margin-top: 0;
-    padding-left: 20px; /* Adjusted padding for the bullets */
-  }
-  ul li {
-    margin-bottom: 5px;
-  }
-</style>
--->
 
 <table>
   <tr>
@@ -145,13 +113,13 @@ Due to the nature of continuous integration, every change needs to be monitored 
   </tr>
 </table>
 
-### Comparison and Integration:
+### Comparison and Integration
 Integrating both SAST and DAST in the security testing process provides a more comprehensive approach to application security. SAST can identify vulnerabilities early in the code, while DAST can test the application’s behavior in a runtime environment, catching issues that static analysis might miss. Together, they offer a balanced and thorough method for securing applications throughout the development lifecycle.
 
 ## Vulnerability scanning
 Vulnerability scanning in a CI/CD pipeline refers to the automated process of identifying security weaknesses in the software code, dependencies, and runtime environments as part of the continuous integration and delivery process. This scanning can detect issues such as insecure coding practices, outdated libraries, misconfigurations, and other vulnerabilities that could potentially be exploited by attackers. You read above the difference between SAST testing and DAST testing. Those processes can be testing using a variety of tools. Some may be cheaper than others, require contracts with experts, or could just be a web plug in. Some of the most popular options you may hear of are listed below
 
-### Examples of widely-used tools in industry:
+### Examples of widely-used tools in industry
 
 > SonarQube - A comprehensive tool that provides static code analysis, identifying vulnerabilities, bugs, and code smells in several programming languages
 
@@ -172,20 +140,19 @@ There are countless variations of vulnerability scanners out there and are const
 
 ### References
 
+**1.** "What is CI/CD security?" *Red Hat*, [Link](https://www.redhat.com/en/topics/security/what-is-cicd-security#:~:text=CI%2FCD%20security%20is%20used,policies%2C%20and%20ensure%20quality%20assurance.). Accessed 9 Apr. 2024.
 
-**1.** “What is CI/CD security?” *Red Hat*, [https://www.redhat.com/en/topics/security/what-is-cicd-security#:~:text=CI%2FCD%20security%20is%20used,policies%2C%20and%20ensure%20quality%20assurance.](https://www.redhat.com/en/topics/security/what-is-cicd-security#:~:text=CI%2FCD%20security%20is%20used,policies%2C%20and%20ensure%20quality%20assurance.). Accessed 9 Apr. 2024.
+**2.** "Security in every stage of CI/CD pipeline" *AWS*, [Link](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/security-in-every-stage-of-cicd-pipeline.html). Accessed 9 Apr. 2024.
 
-**2.** “Security in every stage of CI/CD pipeline” *AWS*, [https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/security-in-every-stage-of-cicd-pipeline.html](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/security-in-every-stage-of-cicd-pipeline.html). Accessed 9 Apr. 2024.
+**3.** "SAST, DAST, and IAST Security Testing" *Contrast Security*, [Link](https://www.contrastsecurity.com/security-influencers/why-the-difference-between-sast-dast-and-iast-matters). Accessed 9 Apr. 2024.
 
-**3.** “SAST, DAST, and IAST Security Testing” *Contrast Security*, [https://www.contrastsecurity.com/security-influencers/why-the-difference-between-sast-dast-and-iast-matters](https://www.contrastsecurity.com/security-influencers/why-the-difference-between-sast-dast-and-iast-matters). Accessed 9 Apr. 2024.
+**4.** "How to use the Jenkins Security Scan " *Jenkins*, [Link](https://www.jenkins.io/doc/developer/security/scan/). Accessed 9 Apr. 2024.
 
-**4.** “How to use the Jenkins Security Scan ” *Jenkins*, [https://www.jenkins.io/doc/developer/security/scan/](https://www.jenkins.io/doc/developer/security/scan/). Accessed 9 Apr. 2024.
+**5.** "SonarQube" *SonarQube*, [Link](https://www.sonarsource.com/products/sonarqube/). Accessed 9 Apr. 2024.
 
-**5.** “SonarQube” *SonarQube*, [https://www.sonarsource.com/products/sonarqube/](https://www.sonarsource.com/products/sonarqube/). Accessed 9 Apr. 2024.
+**6.** "Snyk Open Source" *Snyk*, [Link](https://snyk.io/product/open-source-security-management/?utm_medium=paid-search&utm_source=google&utm_campaign=gs_sn:-brand-ecpc&utm_content=br_sca&utm_term=snyk%20sca&gad_source=1&gclid=Cj0KCQjwztOwBhD7ARIsAPDKnkBbO4ZOhhLOMFnW3niLxxHAljuqKD8iOqe82_KTv9t4CDljRWacTd8aAlTxEALw_wcB). Accessed 9 Apr. 2024.
 
-**6.** "Snyk Open Source" *Snyk*, [https://snyk.io/product/open-source-security-management/?utm_medium=paid-search&utm_source=google&utm_campaign=gs_sn:-brand-ecpc&utm_content=br_sca&utm_term=snyk%20sca&gad_source=1&gclid=Cj0KCQjwztOwBhD7ARIsAPDKnkBbO4ZOhhLOMFnW3niLxxHAljuqKD8iOqe82_KTv9t4CDljRWacTd8aAlTxEALw_wcB](https://snyk.io/product/open-source-security-management/?utm_medium=paid-search&utm_source=google&utm_campaign=gs_sn:-brand-ecpc&utm_content=br_sca&utm_term=snyk%20sca&gad_source=1&gclid=Cj0KCQjwztOwBhD7ARIsAPDKnkBbO4ZOhhLOMFnW3niLxxHAljuqKD8iOqe82_KTv9t4CDljRWacTd8aAlTxEALw_wcB). Accessed 9 Apr. 2024.
+**7.** "Vulnerability Scanner Tools" *Veracode*, [Link](https://www.veracode.com/security/vulnerability-scanning-tools). Accessed 9 Apr. 2024.
 
-**7.** “Vulnerability Scanner Tools” *Veracode*, [https://www.veracode.com/security/vulnerability-scanning-tools](https://www.veracode.com/security/vulnerability-scanning-tools). Accessed 9 Apr. 2024.
-
-**8.** “What is Fortify and How it works? An Overview and Its Use Cases” *DevOps School*, [https://www.devopsschool.com/blog/what-is-fortify-and-how-it-works-an-overview-and-its-use-cases/](https://www.devopsschool.com/blog/what-is-fortify-and-how-it-works-an-overview-and-its-use-cases/). Accessed 9 Apr. 2024.
+**8.** "What is Fortify and How it works? An Overview and Its Use Cases" *DevOps School*, [Link](https://www.devopsschool.com/blog/what-is-fortify-and-how-it-works-an-overview-and-its-use-cases/). Accessed 9 Apr. 2024.
 

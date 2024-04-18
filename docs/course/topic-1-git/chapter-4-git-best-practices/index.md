@@ -1,6 +1,6 @@
 ---
 title: Chapter 4 - Git Best Practices
-layout: default
+layout: custom
 parent: Topic 1 - Git
 has_toc: false
 nav_order: 4
