@@ -1,6 +1,6 @@
 ---
 title: Chapter 2 - Git Fundamentals
-layout: default
+layout: custom
 parent: Topic 1 - Git
 has_toc: false
 has_children: false

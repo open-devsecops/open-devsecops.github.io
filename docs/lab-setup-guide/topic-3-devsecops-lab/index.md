@@ -1,6 +1,6 @@
 ---
 title: Topic 3 - DevSecOps
-layout: default
+layout: custom
 has_children: true
 parent: Lab Infrastructure Setup Guide
 has_toc: false

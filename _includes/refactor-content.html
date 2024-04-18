@@ -1,11 +1,4 @@
-<!-- Refactor the HTML structure -->
-
 {% assign _content = include.content %}
-
-<!--
-  In order to allow a wide table to scroll horizontally,
-  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
--->
 
 {% if _content contains '<table' %}
   {% assign _content = _content
@@ -16,11 +9,6 @@
   %}
 {% endif %}
 
-<!--
-  Fixed kramdown code highlight rendering:
-  https://github.com/penibelst/jekyll-compress-html/issues/101
-  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
--->
 
 {% if _content contains '<pre class="highlight">' %}
   {% assign _content = _content

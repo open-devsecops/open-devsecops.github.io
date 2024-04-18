@@ -1,6 +1,6 @@
 ---
 title: References
-layout: default
+layout: custom
 parent: Other Documents
 has_toc: false
 ---

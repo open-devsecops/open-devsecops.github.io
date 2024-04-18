@@ -1,6 +1,6 @@
 ---
 title: Chapter 1 - Introduction to Version Control
-layout: default
+layout: custom
 parent: Topic 1 - Git
 has_children: false
 has_toc: false

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: custom
 title: Quiz for Cooperative Software Development
 grand_parent: Topic 1 - Cooperative Software Development
 parent: Chapter 2 - Git Fundamentals

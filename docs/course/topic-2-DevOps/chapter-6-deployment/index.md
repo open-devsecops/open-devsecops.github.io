@@ -1,6 +1,6 @@
 ---
 title: Chapter 6 - Deployment
-layout: default
+layout: custom
 parent: Topic 2 - DevOps
 has_toc: false
 has_children: true

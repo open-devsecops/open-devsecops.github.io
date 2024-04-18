@@ -1,71 +1,71 @@
 ---
 title: Course Overview
-layout: default
+layout: custom
 has_toc: false
 nav_order: 1
 ---
 
 ## Course Overview 📖
 
-<table border="1" style="width:100%; border-collapse: collapse; font-family: Arial, sans-serif;">
+<table style="width:100%; border-collapse: collapse; font-family: Arial, sans-serif;">
     <thead>
         <tr style="background-color: #f2f2f2; color: black;">
-            <th style="border: 2px solid black;">Topic</th>
-            <th style="border: 2px solid black;">Chapter and Title</th>
-            <th style="border: 2px solid black;">Interactive Lab</th>
+            <th style="border: 1px solid lightgray;">Topic</th>
+            <th style="border: 1px solid lightgray;">Chapter and Title</th>
+            <th style="border: 1px solid lightgray;">Interactive Lab</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td rowspan="4" style="vertical-align: middle; text-align: center; font-weight: bold; background-color: rgba(187, 219, 254, 0.5); border: 2px solid black;">Git</td>
-            <td style="border: 2px solid black;">Chapter 1: Version Control</td>
-            <td style="text-align: center; border: 2px solid black;"></td>
+            <td rowspan="4" style="vertical-align: middle; text-align: center; font-weight: bold; background-color: rgba(187, 219, 254, 0.5); border: 1px solid lightgray;">Git</td>
+            <td style="border: 1px solid lightgray;">Chapter 1: Version Control</td>
+            <td style="text-align: center; border: 1px solid lightgray;"></td>
         </tr>
         <tr>
-            <td style="border: 2px solid black;">Chapter 2: Git Fundamentals</td>
-            <td style="text-align: center; border: 2px solid black;"></td>
+            <td style="border: 1px solid lightgray;">Chapter 2: Git Fundamentals</td>
+            <td style="text-align: center; border: 1px solid lightgray;"></td>
         </tr>
         <tr>
-            <td style="border: 2px solid black;">Chapter 3: Git Intermediate Concepts</td>
-            <td style="text-align: center; background-color: #c8e6c9; color: #388e3c; font-weight: bold; border: 2px solid black;">Yes</td>
+            <td style="border: 1px solid lightgray;">Chapter 3: Git Intermediate Concepts</td>
+            <td style="text-align: center; background-color: #c8e6c9; color: #388e3c; font-weight: bold; border: 1px solid lightgray;">Yes</td>
         </tr>
         <tr>
-            <td style="border: 2px solid black;">Chapter 4: Git Best Practices</td>
-            <td style="text-align: center; border: 2px solid black;"></td>
+            <td style="border: 1px solid lightgray;">Chapter 4: Git Best Practices</td>
+            <td style="text-align: center; border: 1px solid lightgray;"></td>
         </tr>
         <tr>
-            <td rowspan="6" style="vertical-align: middle; text-align: center; font-weight: bold; background-color: rgba(190, 188, 252, 0.5); border: 2px solid black;">DevOps</td>
-            <td style="border: 2px solid black;">Chapter 1: Intro to DevOps</td>
-            <td style="text-align: center; border: 2px solid black;"></td>
+            <td rowspan="6" style="vertical-align: middle; text-align: center; font-weight: bold; background-color: rgba(190, 188, 252, 0.5); border: 1px solid lightgray;">DevOps</td>
+            <td style="border: 1px solid lightgray;">Chapter 1: Intro to DevOps</td>
+            <td style="text-align: center; border: 1px solid lightgray;"></td>
         </tr>
         <tr>
-            <td style="border: 2px solid black;">Chapter 2: Intro to CI/CD</td>
-            <td style="text-align: center; border: 2px solid black;"></td>
+            <td style="border: 1px solid lightgray;">Chapter 2: Intro to CI/CD</td>
+            <td style="text-align: center; border: 1px solid lightgray;"></td>
         </tr>
         <tr>
-            <td style="border: 2px solid black;">Chapter 3: Containerization</td>
-            <td style="text-align: center; background-color: #c8e6c9; color: #388e3c; font-weight: bold; border: 2px solid black;">Yes</td>
+            <td style="border: 1px solid lightgray;">Chapter 3: Containerization</td>
+            <td style="text-align: center; background-color: #c8e6c9; color: #388e3c; font-weight: bold; border: 1px solid lightgray;">Yes</td>
         </tr>
         <tr>
-            <td style="border: 2px solid black;">Chapter 4: Webhooks</td>
-            <td style="text-align: center; border: 2px solid black;"></td>
+            <td style="border: 1px solid lightgray;">Chapter 4: Webhooks</td>
+            <td style="text-align: center; border: 1px solid lightgray;"></td>
         </tr>
         <tr>
-            <td style="border: 2px solid black;">Chapter 5: Automated Tests</td>
-            <td style="text-align: center; border: 2px solid black;"></td>
+            <td style="border: 1px solid lightgray;">Chapter 5: Automated Tests</td>
+            <td style="text-align: center; border: 1px solid lightgray;"></td>
         </tr>
         <tr>
-            <td style="border: 2px solid black;">Chapter 6: Deployment</td>
-            <td style="text-align: center; background-color: #c8e6c9; color: #388e3c; font-weight: bold; border: 2px solid black;">Yes</td>
+            <td style="border: 1px solid lightgray;">Chapter 6: Deployment</td>
+            <td style="text-align: center; background-color: #c8e6c9; color: #388e3c; font-weight: bold; border: 1px solid lightgray;">Yes</td>
         </tr>
         <tr>
-            <td rowspan="2" style="vertical-align: middle; text-align: center; font-weight: bold; background-color: rgba(195, 125, 248, 0.5); border: 2px solid black;">DevSecOps</td>
-            <td style="border: 2px solid black;">Chapter 1: DevSecOps</td>
-            <td style="text-align: center; background-color: #c8e6c9; color: #388e3c; font-weight: bold; border: 2px solid black;">Yes</td>
+            <td rowspan="2" style="vertical-align: middle; text-align: center; font-weight: bold; background-color: rgba(195, 125, 248, 0.5); border: 1px solid lightgray;">DevSecOps</td>
+            <td style="border: 1px solid lightgray;">Chapter 1: DevSecOps</td>
+            <td style="text-align: center; background-color: #c8e6c9; color: #388e3c; font-weight: bold; border: 1px solid lightgray;">Yes</td>
         </tr>
         <tr>
-            <td style="border: 2px solid black;">Chapter 2: Security Checks in CI/CD</td>
-            <td style="text-align: center; border: 2px solid black;"></td>
+            <td style="border: 1px solid lightgray;">Chapter 2: Security Checks in CI/CD</td>
+            <td style="text-align: center; border: 1px solid lightgray;"></td>
         </tr>
     </tbody>
 </table>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: custom
 title: Lab 1. Version Control and Branching
 grand_parent: Topic 1 - Git
 parent: Chapter 3 - Git Intermediate Concepts

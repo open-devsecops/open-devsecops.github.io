@@ -1,6 +1,6 @@
 ---
 title: Chapter 2 - Intro to CI/CD
-layout: default
+layout: custom
 parent: Topic 2 - DevOps
 has_children: false
 has_toc: false

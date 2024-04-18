@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: home
+layout: custom
 nav_order: 0
 ---
 # DevSecOps Curriculum 💻

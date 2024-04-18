@@ -1,6 +1,6 @@
 ---
 title: Chapter 1 - Intro to DevOps
-layout: default
+layout: custom
 parent: Topic 2 - DevOps
 has_children: false
 has_toc: false

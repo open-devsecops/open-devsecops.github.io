@@ -4,9 +4,12 @@ layout: custom
 grand_parent: Lab Infrastructure Setup Guide
 parent: Topic 2 - DevOps
 has_toc: false
+has_sidetoc: true
 ---
 
 # DevOps Lab Infrastructure Setup Guide on AWS
+**Estimated Cost:** ~$1/day
+{: .label .label-yellow }
 
 This guide provides detailed instructions for setting up the necessary infrastructure on AWS to support the CI/CD labs in our curriculum. By following this guide, educators and learners will be able to prepare a robust environment for hands-on practice with continuous integration and continuous delivery.
 
@@ -53,10 +56,10 @@ aws configure
 
 <hr>
 
-## Setting Up the Infrastructure with Terraform
+## Setting Up The Infrastructure With Terraform
 With the AWS CLI configured, the next step is to set up the actual lab infrastructure using Terraform. Terraform will allow you to automate the deployment of all required AWS resources.
 
-### Clone the Infrastructure Setup Scripts
+### Clone The Infrastructure Setup Scripts
 1. Open your terminal.
 2. Run the following command to clone the lab infrastructure setup repository. This repository contains all the necessary Terraform scripts for various lab topics.
 ```bash
@@ -122,7 +125,7 @@ ec2_public_ip = "54.176.55.245"
 
 ## Accessing Internal Services
 
-### Use the VPN Config Generator
+### Use The VPN Config Generator
 1. Navigate to the VPN Config Generator at `https://{ec2_public_ip}`. Replace `{ec2_public_ip}` with the actual public IP address output by Terraform.
 ![vpn-config page](./assets/vpn-config.png)
 2. Download the VPN Configuration file

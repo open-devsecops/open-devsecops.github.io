@@ -233,3 +233,165 @@ div.highlighter-rouge > button, div.listingblock > div.content > button, figure.
     width: 100%;
     text-align: center;
 }
+
+
+.main-content-wrap {
+    width: 100%;
+}
+
+
+#tocbot-toc {
+    border-left: 1px solid rgba(158, 158, 158, 0.17);
+    transition: top 0.2s ease-in-out;
+    -webkit-animation: fade-up 0.8s;
+    animation: fade-up 0.8s;
+    box-sizing: border-box;
+    padding-top: 64px;
+    flex: 1;
+    min-width: 300px;
+    background-color: #fbfbfb;
+    border-left: 1px solid #eeebee;
+
+    h2 {
+        font-size: 1rem !important;
+        padding: 0.6rem 0 0 1.5rem;
+    }
+
+    ol {
+        list-style: none;
+        font-size: 0.85rem;
+        line-height: 1.25;
+        padding-left: 0;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 64px;
+
+        li {
+            &:not(:last-child) {
+                margin: 0.4rem 0;
+            }
+
+            a {
+                padding: 0.5rem 1.5rem 0.2rem 1.5rem;
+            }
+        }
+
+        /* Overwrite TOC plugin style */
+
+        .toc-link {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &:hover {
+                color: #7253ed;
+                text-decoration: none;
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+
+        .is-active-link {
+            color: #7253ed !important;
+            font-weight: normal;
+
+            &::before {
+                display: inline-block;
+                width: 1px;
+                left: -1px;
+                height: 1.25rem;
+                background-color: var(--toc-highlight) !important;
+            }
+        }
+
+        ul {
+            padding-left: 0.75rem;
+        }
+    }
+}
+
+.main {
+    @include mq(md) {
+        position: relative;
+        max-width: unset;
+    }
+
+    @include mq(lg) {
+    }
+
+    margin-left: 0;
+    max-width: unset;
+    flex: 2;
+}
+
+.side-bar {
+    z-index: 50;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    flex: 1;
+}
+
+.filler {
+  flex: 1;
+}
+
+.main-container {
+    margin: 0 auto;
+    display: flex;
+}
+
+.content-container {
+  flex: 2 0 800px;
+  max-width: 1000px;
+}
+
+@media (min-width: 330px) and (max-width: 1000px) {
+  #tocbot-toc {
+    display: none;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .side-bar {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: $sidebar-color;
+    height: 80px;
+    width: 100%;
+  }
+
+  .site-footer {
+    display: none;
+  }
+
+  .site-nav {
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+  #tocbot-toc {
+    display: none;
+  }
+}
+
+.site-header {
+  border: none;
+}
+
+.site-nav {
+  padding-top: 0.6rem;
+}
+
+.site-title {
+  font-size: 1.25rem!important;
+}

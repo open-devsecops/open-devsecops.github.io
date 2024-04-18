@@ -1,6 +1,6 @@
 ---
 title: Chapter 3 - Containerization
-layout: default
+layout: custom
 parent: Topic 2 - DevOps
 has_children: true
 has_toc: false
