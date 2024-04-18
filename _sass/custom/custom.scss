@@ -254,7 +254,7 @@ div.highlighter-rouge > button, div.listingblock > div.content > button, figure.
 
     h2 {
         font-size: 1rem !important;
-        padding: 0.5rem 0 0 1.5rem;
+        padding: 0.6rem 0 0 1.5rem;
     }
 
     ol {
@@ -346,7 +346,7 @@ div.highlighter-rouge > button, div.listingblock > div.content > button, figure.
 
 .content-container {
   flex: 2 0 800px;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 @media (min-width: 330px) and (max-width: 1000px) {
@@ -382,4 +382,16 @@ div.highlighter-rouge > button, div.listingblock > div.content > button, figure.
   #tocbot-toc {
     display: none;
   }
+}
+
+.site-header {
+  border: none;
+}
+
+.site-nav {
+  padding-top: 0.6rem;
+}
+
+.site-title {
+  font-size: 1.25rem!important;
 }
