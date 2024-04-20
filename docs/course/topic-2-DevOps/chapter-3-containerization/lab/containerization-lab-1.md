@@ -13,13 +13,19 @@ nav_order: 2
 - Understand Docker container isolation
 
 ## Introduction
-Welcome :wave: This lab serves as your first step into container technology, empowering you with the skills to package and isolate a React application in a Docker container.
+Welcome 👋
+
+This lab serves as your first step into container technology, empowering you with the skills to package and isolate a React application in a Docker container.
 
 ## Fork and Clone the Reference Application
 Let' start by forking the reference application repository. This will create a copy that you can modify and use without affecting the original codebase. Cloning will then brings this copy to your local machine.
 
-1. **Fork the Repository:** Navigate to the [reference application](https://github.com/open-devsecops/topic-2-lab-reference-app) and fork the repository to your own GitHub account.
-2. **Clone Your Fork:** Open your terminal and clone the forked repository to your local machine using `git clone <your-fork-url>`.
+1. **Fork the Repository:** Navigate to the [reference application](https://github.com/open-devsecops/topic-2-lab-reference-app){:target="_blank"} and fork the repository to your own GitHub account.
+2. **Clone Your Fork:** Open your terminal and clone the forked repository to your local machine.
+
+```bash
+git clone <your-forked-repo-url>`
+```
 
 ## Run the React Application Locally
 With the reference application repository cloned, let's run the React app locally to see how it looks and functions on your machine. 
@@ -28,6 +34,12 @@ With the reference application repository cloned, let's run the React app locall
 2. **Install Dependencies:** Run `npm install` to install the required node modules for the project.
 3. **Start the Application:** Enter `npm start` to run the application locally. Your default web browser should automatically open to `http://localhost:3000`, displaying the reference application.
 
+```bash
+cd topic-2-lab-reference-app
+npm install
+npm start
+```
+
 ## Containerize the Application
 Okay, we have the React application running on our local machine. Imagine you want to ensure that this React app runs exactly the same way on any machine. How can you achieve that? The answer lies in containerization.
 
@@ -35,22 +47,25 @@ Okay, we have the React application running on our local machine. Imagine you wa
 ### Creating a Dockerfile
 The first step in containerizing your application is to create a Dockerfile. This file contains a set of instructions for Docker to build an image of your application.
 
-In the root directory of your project, create a file named `Dockerfile` with no file extension. This file will dictate how Docker should package your app and its environment.
+**In the root directory of your project**, create a file named `Dockerfile` with no file extension. This file will dictate how Docker should package your app and its environment.
 
 **Specifying the Base Image:** Start your Dockerfile with a line specifying the base image. For a React application, a good starting point is the official Node.js image. This ensures your app has all the necessary Node.js tools right from the get-go.
 
 ```Dockerfile
 FROM node:21-alpine AS build
 ```
-Here, node:21-alpine specifies that we're using version 21 of Node.js based on the lightweight Alpine Linux. This choice keeps our image small and fast to deploy.
+Here, `node:21-alpine` specifies that we're using version 21 of Node.js based on the lightweight Alpine Linux. This choice keeps our image small and fast to deploy.
 
-**Setting Up The Working Directory:** Let's set up a directory for the React app. All subsequent intructions from this Dockerfile will be executed relative to this directory.
+{: .info}
+`AS build` names this stage of the build process **build**. Naming a stage allows you to refer to it in later stages of the build, especially when you want to copy artifacts from one stage to another without carrying over all the files and settings from the previous stages. This will start to make more sense as we proceed with the rest of the build definition.
+
+**Setting Up The Working Directory:** Let's set up a directory for the React app. All subsequent intructions from this Dockerfile will be executed relative to this directory within the running container.
 
 ```Dockerfile
 WORKDIR /app
 ```
 
-**Copying The Application Files:** Now, let's copy your application's files into the container. Start with the package.json files to optimize caching for npm install.
+**Copying The Application Files:** Now, let's copy your application's files into the container's working directory. Start with the package.json files to optimize caching for npm install.
 
 ```Dockerfile
 COPY package*.json .
@@ -63,12 +78,15 @@ RUN npm install
 COPY . .
 ```
 
+{: .info}
+The dot used as a path `.` refers to the current directory. When used in the COPY command, the first dot represents the path in the context of your local file system (source), and the second dot represents the path inside the Docker container (destination). It translates to "copy everything from the current directory on my local machine to the current directory inside the container."
+
 **Compiling Static Files:** Let's build the React app to compile static files for production.
 ```Dockerfile
 RUN npm run build
 ```
 
-**Serving the Application with Nginx:** To serve the static files generated by the build process, we'll use nginx, a high-performance web server. This involves setting up a second stage in our Dockerfile that starts with a fresh image. This technique, known as a multi-stage build, allows us to keep our final image as lightweight as possible by excluding dependencies from the Node.js build environment.
+**Serving the Application with Nginx:** To serve the static files generated by the build process, we'll use nginx, a high-performance web server. This involves setting up a second stage in our Dockerfile that starts with a fresh image. This technique, known as a _multi-stage build_, allows us to keep our final image as lightweight as possible by excluding dependencies from the Node.js build environment.
 
 ```Dockerfile
 # Start a new stage from nginx
@@ -77,7 +95,7 @@ FROM nginx:alpine AS runtime
 # Set working directory to nginx asset directory
 WORKDIR /usr/share/nginx/html
 
-# Copy static assets from base stage to the current working directory /usr/share/nginx/html
+# Copy static assets from base stage (node.js build image) to the current working directory /usr/share/nginx/html (nginx image)
 COPY --from=build /app/build .
 ```
 
@@ -100,7 +118,7 @@ COPY --from=build /app/build .
 ```
 
 ## Building Your Docker Image
-With your Dockerfile ready, it's time to build the image. Open your terminal, navigate to the root directory of your project, and run:
+With your Dockerfile ready, it's time to build the image. Open your terminal, navigate to the root directory of your project where the Dockerfile resides, and run:
 
 ```bash
 docker build -t my-app .
@@ -111,10 +129,16 @@ This command tells Docker to build an image named `my-app` based on the instruct
 ## Running Your Docker Container
 Once the build completes, you can run your containerized application with:
 ```bash
-docker run -p 8080:80 my-app
+docker run -d -p 8080:80 my-app
 ```
 
-This command starts a container from the my-app image that we just created, mapping port 8080 from your host machine to port 80 inside your container. Now, if you navigate to `http://localhost:8080`, you should see the same React application running, just as it did before — but this time, it's running inside a Docker container.
+This command starts a container from the my-app image that we just created. 
+
+In our Docker setup, the Nginx web server inside the container was configured to serve the React static files and listen on port 80, the default port for HTTP web traffic. To make the web server accessible from your local machine, we map port 8080 from your host machine to port 80 inside the container (`-p 8080:80`).
+
+Now, if you navigate to `http://localhost:8080`, you should see the same React application running, just as it did before — but this time, it's running inside a Docker container.
+
+The `-d` option tells Docker to run the container in the background. This allows the container to continue running without occupying the terminal session from which it was started.
 
 ## Stopping Your Running Container
 Containers, like any other application, use system resources such as CPU, memory, and network bandwidth. Stopping unused containers frees up these resources.
@@ -143,7 +167,7 @@ When your React application is running inside a Docker container, you might wond
 Docker provides a command, `docker exec`, which allows you to execute commands inside a **running container**. Using this, you can start an interactive shell session:
 
 ```bash
-docker exec -it my-app sh
+docker exec -it <container-id or container-name> sh
 ```
 
 Here, `-it` instructs Docker to run `sh` in interactive mode in the container named `my-app`.
