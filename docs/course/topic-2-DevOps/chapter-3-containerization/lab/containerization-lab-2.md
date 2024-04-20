@@ -5,6 +5,12 @@ grand_parent: Topic 2 - DevOps
 parent: Chapter 3 - Containerization
 nav_order: 3
 ---
+# Lab 2 - Accessing Corporate Network and AWS ECR
+**Estimated Time to Complete:** 30-45 minutes
+{: .label .label-blue }
+
+{: .info}
+Before you begin the lab exercise, please check the **Labs Overview** page to ensure that you have all the required software installed and that you meet all the prerequisites.
 
 ## Learning Objectives
 - Establish a VPN connection to access the corporate internal network.
