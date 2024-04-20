@@ -12,17 +12,17 @@ In this lab, you will automate the process of building, and deploying a Dockeriz
 ## Accessing the Corporate Network via VPN
 
 {: .important }
-> This lab requires the lab infrastructure to be set up by an instructor or administrator. Independent learners should refer to the [lab setup repository](https://github.com/open-devsecops/lab-infra-setup/tree/main/topic-2-cicd-lab/aws) to configure this environment accordingly.
+This lab requires the lab infrastructure to be set up by an instructor or administrator. Independent learners should refer to the [lab setup repository](https://github.com/open-devsecops/lab-infra-setup/tree/main/topic-2-cicd-lab/aws) to configure this environment accordingly.
 
 
 **VPN Configuration and Connection:**
-- Download the VPN configuration file from `http://{public_ip}:7779`. Ask the lab administrator for the public ip of the internal network, and replace the `{public_ip}` placeholder.
+- Download the VPN configuration file from `https://{public_ip}`. _Ask the lab administrator for the public ip of the internal network, and replace the `{public_ip}` placeholder._
 - Import the VPN configuration file into the Wireguard Client to establish the VPN connection. This step provides access to internal services.
+![wireguard interface](./imgs/wireguard.png)
 
 ## Accessing Jenkins
-Once you're connected to the VPN, navigate to `http://jenkins.internal` in your browser to access the Jenkins dashboard. The default credentials can be found below:
-- **Username:** student
-- **Password:** student1!
+Once you're connected to the VPN, navigate to `http://jenkins.internal` in your browser to access the Jenkins dashboard. _Ask the lab administrator for the credentials for jenkins._ 
+![jenkins main interface](./imgs/jenkins-login.png)
 
 ## Creating a Pipeline in Jenkins
 - Create a New Item: From the Jenkins dashboard, select "New Item" at the top left.
