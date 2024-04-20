@@ -143,7 +143,7 @@ Once your infrastructure is ready and you have connected to the internal network
 ![jenkins unlock page](./assets/unlock-jenkins.png)
 2. To unlock Jenkins and begin setup, you need the initial admin password. Use the command below to retrieve this.
 ```bash
-[ssh command] -f "sudo docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword"
+ssh -i topic-2-cicd-lab-key.pem ubuntu@{ec2_public_ip} -f "sudo docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword"
 ```
 3. Back in your web browser on the Jenkins unlock page, enter the initial admin password you retrieved to unlock 4. Select the option to Select Plugins to Install.
 ![jenkins install plugins page](./assets/customize-jenkins.png)
@@ -153,4 +153,34 @@ Once your infrastructure is ready and you have connected to the internal network
 7. Once the plugin installation is complete, proceed to the Create First Admin User step.
 8. Fill out the form with the admin username, password.
 9. On the Instance Configuration page, ensure the Jenkins URL is set to http://jenkins.internal/. This should be populated automatically.
+![jenkins instance config page](./assets/url-jenkins.png)
 10. Click Save and Finish.
+
+<hr>
+
+## Setting Up Jenkins
+![jenkins main page](./assets/jenkins-main.png)
+
+### Creating Student Account
+Finally, let's set up a student account that has the necessary permissions to create and manage pipelines but does not possess full administrative rights.
+
+1. Click on Manage Jenkins from the main menu on the left.
+2. Access `Security > Users`
+3. Click on Create User to set up a new account.
+4. Return to Manage Jenkins and select `Security > Security`.
+5. Scroll to the Authorization section.
+6. Select "Matrix-based security" from the list of Authorization strategies.
+8. Click Add user.
+7. Enter the username of the student account you created.
+8. Configure the permissions for the student account as follows and click on "Save" to apply the changes.
+
+![jenkins auth settings for student account](./assets/jenkins-auth.png)
+
+
+### (Optional) Installing BlueOcean Plugin
+BlueOcean improves the user experience of Jenkins, providing a more visual and intuitive approach to pipeline creation and management.
+
+1. Go back to the Manage Jenkins page and select Manage Plugins.
+2. Switch to the Available tab and use the search bar to find `Blue Ocean`.
+3. Check the box next to Blue Ocean
+4. Click on Install to begin installing the selected plugins.
