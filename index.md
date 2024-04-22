@@ -27,7 +27,7 @@ The tech world is rapidly evolving, and with it, the requirements of the softwar
 
 Our curriculum aims to fill this void by providing up-to-date, practical training in DevSecOps and CI/CD practices. By integrating our modules into existing courses, professors can enrich their curriculum, preparing students for the challenges of modern software development and making them valuable assets to the industry from day one.
 
-To understand the skills gap that new graduates face, refer to our [User Research](https://github.com/open-devsecops/docs/blob/master/research/user-research.md).
+To understand the skills gap that new graduates face, refer to our [User Research](./docs/other/research/user-research).
 
 ## Benefits of Open-Source 🌍
 - **Continuous Evolution**: Keeping the curriculum up-to-date with the latest industry advancements.
