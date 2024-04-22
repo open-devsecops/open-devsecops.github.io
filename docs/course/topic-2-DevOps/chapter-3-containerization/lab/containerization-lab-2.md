@@ -19,12 +19,12 @@ Before you begin the lab exercise, please check the **Labs Overview** page to en
 - Demonstrate understanding of AWS IAM roles and permissions by using an assumed role for Docker operations.
 
 ## Introduction
-This lab simulates a common industry practice where developers need to access corporate resources securely via a VPN. You'll will be using the internal services available to generate temporary credentials for AWS services, allowing you to push Docker images to a company-shared AWS Elastic Container Registry (ECR).
+**This lab simulates a common industry practice where developers need to access corporate resources securely via a VPN.** You'll will be using the internal services available to generate temporary credentials for AWS services, allowing you to push Docker images to a company-shared AWS Elastic Container Registry (ECR).
 
 ## Accessing the Corporate Network via VPN
 
 {: .warning}
-This lab requires the lab infrastructure to be set up by an instructor or administrator. Independent learners should refer to the [lab setup repository](https://github.com/open-devsecops/lab-infra-setup/tree/main/topic-2-devops-lab/aws) to configure this environment accordingly.
+This lab requires the lab infrastructure to be set up by an instructor or administrator. Independent learners should refer to the [lab setup guide](../../../../lab-setup-guide/) to configure this environment accordingly.
 
 **VPN Configuration and Connection:**
 - Download the VPN configuration file from `https://{public_ip}`. _Ask the lab administrator for the public ip of the internal network, and replace the `{public_ip}` placeholder._
@@ -39,34 +39,44 @@ This lab requires the lab infrastructure to be set up by an instructor or admini
 
 ## Generating Temporary AWS IAM Credentials
 
-**Credential Generation:**
-- On the dashboard, use the credential generator for the StudentRole AWS IAM role. This utility provides you with temporary credentials granting limited access to AWS services.
+### Credential Generation
+- On the dashboard, use the _AWS IAM Assume Role_ credential generator. This utility provides you with temporary credentials granting limited access to AWS services.
 - Note down the generated Access Key ID, Secret Access Key, and Session Token.
 
-**Configure AWS CLI with Temporary Credentials:**
+### Configure AWS CLI with Temporary Credentials
 - Run `aws configure` to input the temporary credentials. When prompted, enter the Access Key ID, Secret Access Key, and specify the default region `us-west-1`. For the output format, you can choose `json`.
-- To use the Session Token, you'll need to export it as an environment variable:
+- Now, we need to add the _AWS Session Token_ as part of the credential configuration. When you used the AWS IAM Assume Role credential generator, it provided temporary security credentials that include a Session Token. Failure to include the Session Token will result in AWS rejecting requests made with these credentials
 
+**For MacOS/Linux:**
+Run the following commands to add the temporary credentials to your AWS credentials file:
 ```bash
-export AWS_SESSION_TOKEN=<your_session_token>
+echo "aws_session_token = YOUR_SESSION_TOKEN" >> ~/.aws/credentials
 ```
+
+**For Windows:**
+Run the following commands to add the temporary credentials to your AWS credentials file:
+```bash
+echo aws_session_token=YOUR_SESSION_TOKEN >> %USERPROFILE%\.aws\credentials
+```
+
+
 
 ## Interacting with AWS ECR
 AWS Elastic Container Registry (ECR) is a managed Docker container registry service that makes it easy for developers to store, manage, and deploy Docker container images.
 
-**Check for an Existing Repository:**
+### Check for an Existing Repository
 In AWS ECR, each Docker image is stored in a repository, which acts as a collection or a namespace for your Docker images. Before pushing a new image to ECR, it's important to check if the respository already exists.
 
 ```bash
 aws ecr describe-repositories
 ```
 
-**Create image repository if it doesn't exist**
+### Create image repository if it doesn't exist
 ```bash
 aws ecr create-repository --repository-name <repository-name>
 ```
 
-**Authenticate Docker Client to AWS ECR:**
+### Authenticate Docker Client to AWS ECR
 Authenticate your Docker client to the AWS ECR service to enable pushing and pulling images.
 
 ```bash
@@ -74,7 +84,7 @@ aws ecr get-login-password | docker login --username AWS --password-stdin <share
 ```
 `<shared-registry-url>` can be found in the internal dashboard.
 
-**Tag and Push Your Docker Image:**
+### Tag and Push Your Docker Image
 Tag your local Docker image with the ECR repository URI
 
 ```bash
@@ -98,13 +108,13 @@ This command lists all Docker images stored locally. If you've been following al
 - The original image you built from your Dockerfile.
 - The tagged image intended for AWS ECR.
 
-**Deleting the local Docker images:**
+### Deleting the local Docker images
 ```bash
 docker rmi <image-name>
 docker rmi <shared-registry-url>/<repository-name>
 ```
 
-**Pulling the Docker Image from AWS ECR:**
+### Pulling the Docker Image from AWS ECR
 After cleaning up local images, we can demonstrate that any machine with appropriate IAM credentials can pull the Docker image from AWS ECR:
 ```bash
 docker pull <shared-registry-url>/<repository-name>
