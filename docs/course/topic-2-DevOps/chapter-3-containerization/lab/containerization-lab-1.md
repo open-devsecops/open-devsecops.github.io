@@ -6,7 +6,7 @@ parent: Chapter 3 - Containerization
 nav_order: 2
 ---
 # Lab 1 - Containerizing a React Application
-**Estimated Time to Complete:** 20-25 minutes
+**Estimated Time to Complete:** 25-30 minutes
 {: .label .label-blue }
 
 {: .info}
@@ -45,6 +45,15 @@ cd topic-2-lab-reference-app
 npm install
 npm start
 ```
+
+## (Optional) Customize the React Application!
+Now that you have the application running, feel free to personalize it! This will also prepare you for the next lab, where you'll share your customized app with a classmate.
+
+1. Open the `src/App.js` file in your favorite code editor.
+2. Make changes to the JSX to alter the layout, style, or functionality of your app. For example, you might want to change text, or add images!
+
+{: .info}
+If you want to include images, place them in the `public` folder of your project, and reference them in the `App.js` file with the following HTML tag: `<img src="/image-name.jpg" alt="Description of image" />`.
 
 ## Containerize the Application
 Okay, we have the React application running on our local machine. Imagine you want to ensure that this React app runs exactly the same way on any machine. How can you achieve that? The answer lies in containerization.
