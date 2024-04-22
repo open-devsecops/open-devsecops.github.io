@@ -62,19 +62,17 @@ echo aws_session_token=YOUR_SESSION_TOKEN >> %USERPROFILE%\.aws\credentials
 
 
 ## Interacting with AWS ECR
-AWS Elastic Container Registry (ECR) is a managed Docker container registry service that makes it easy for developers to store, manage, and deploy Docker container images.
+AWS Elastic Container Registry (ECR) is a managed Docker container registry service that makes it easy for developers to share Docker container images.
 
-### Check for an Existing Repository
-In AWS ECR, each Docker image is stored in a repository, which acts as a collection or a namespace for your Docker images. Before pushing a new image to ECR, it's important to check if the respository already exists.
+### Creating an Image Repository
+**In AWS ECR, each Docker image is stored in a repository**, which acts as a collection or a namespace for your Docker images. Let's create a repository where you can push and share your Docker image.
 
-```bash
-aws ecr describe-repositories
-```
-
-### Create image repository if it doesn't exist
 ```bash
 aws ecr create-repository --repository-name <repository-name>
 ```
+
+{: .warning}
+When creating a new repository, it's important to choose a unique name.If you try to create a repository with a name that already exists within the AWS account in the same region, AWS will throw a `RepositoryAlreadyExistsException`. You can use the `aws ecr describe-repositories` command to list all available repositories.
 
 ### Authenticate Docker Client to AWS ECR
 Authenticate your Docker client to the AWS ECR service to enable pushing and pulling images.
@@ -98,24 +96,19 @@ docker push <shared-registry-url>/<repository-name>
 ```
 
 ## Managing Docker Images Locally and Pulling from AWS ECR
-Okay, let's now verify that you can pull the image from the remote registry. We'll do this by deleting images to simulate a fresh environment, and pulling the image from AWS ECR to demonstrate accessibility.
+Okay, now that your image is successfully pushed to the company's shared registry, it's accessible to anyone with the right permissions within your organization.
 
+### Pulling the Docker Image from AWS ECR
+Let's try pulling a repository of your classmate's image from the shared AWS ECR. You can obtain the names of their Docker images stored in AWS ECR by either asking directly or using an AWS CLI command to list all available repositories.
+
+Once you have the repository name, proceed to pull.
+```bash
+docker pull <shared-registry-url>/<repository-name>
+```
+
+Check the Docker images currently stored on your machine.
 ```bash
 docker images
 ```
 
-This command lists all Docker images stored locally. If you've been following along with this lab, you should see at least two images:
-- The original image you built from your Dockerfile.
-- The tagged image intended for AWS ECR.
-
-### Deleting the local Docker images
-```bash
-docker rmi <image-name>
-docker rmi <shared-registry-url>/<repository-name>
-```
-
-### Pulling the Docker Image from AWS ECR
-After cleaning up local images, we can demonstrate that any machine with appropriate IAM credentials can pull the Docker image from AWS ECR:
-```bash
-docker pull <shared-registry-url>/<repository-name>
-```
+After pulling the image, run it locally to see the application your classmate developed!
