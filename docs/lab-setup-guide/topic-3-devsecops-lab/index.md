@@ -8,4 +8,6 @@ has_toc: false
 
 # DevSecOps Lab Infrastructure Setup Guide Overview
 
-## Introduction
+| Cloud Vendor | Setup Guide Link |
+| ------------ | ---------------- |
+| AWS | [DevSecOps Lab Infrastructure Setup Guide on AWS](./aws/) |
