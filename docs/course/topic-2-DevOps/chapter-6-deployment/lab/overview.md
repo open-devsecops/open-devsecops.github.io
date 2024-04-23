@@ -15,7 +15,7 @@ Transitioning from these manual workflows, Chapter 2 aims to streamline and auto
 
 | Topic                                          |
 |------------------------------------------------|
-| [Configuring a Simple Jenkins Pipeline](automation-lab-1)  |
+| [Configuring a Simple CI/CD Pipeline](deployment-lab-1)  |
 
 ## Prerequisites
 

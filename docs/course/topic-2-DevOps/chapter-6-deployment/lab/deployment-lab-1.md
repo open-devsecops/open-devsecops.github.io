@@ -1,5 +1,5 @@
 ---
-title: Lab 1. Configuring a Simple Jenkins Pipeline
+title: Lab 1. Configuring a Simple CI/CD Pipeline
 layout: custom
 grand_parent: Topic 2 - DevOps
 parent: Chapter 6 - Deployment
@@ -7,7 +7,7 @@ nav_order: 2
 ---
 
 ## Introduction
-In this lab, you will automate the process of building, and deploying a Dockerized application using Jenkins. Building upon the manual processes you learned in Chapter 1, you will create a very simple Jenkins pipeline that automates these tasks.
+In this lab, you will automate the process of building, and deploying a Dockerized application using Jenkins. Building upon the manual processes you learned in Chapter 3, you will create a very simple Jenkins pipeline that automates these tasks.
 
 ## Accessing the Corporate Network via VPN
 
@@ -134,7 +134,7 @@ In the second shell command, we check whether the specified AWS ECR repository a
 
 Finally, we reach the deploy stage. This is where we take our Docker image and run it, making our application live and accessible to the world!
 
-```Groovy
+```groovy
 stage('Deploy') {
     steps {
         sh 'docker pull $AWS_ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com/<image-name>'
