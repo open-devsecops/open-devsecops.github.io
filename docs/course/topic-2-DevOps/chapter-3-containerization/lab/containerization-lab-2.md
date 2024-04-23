@@ -99,7 +99,7 @@ docker push <shared-registry-url>/<repository-name>
 Okay, now that your image is successfully pushed to the company's shared registry, it's accessible to anyone with the right permissions within your organization.
 
 ### Pulling the Docker Image from AWS ECR
-Let's try pulling a repository of your classmate's image from the shared AWS ECR. You can obtain the names of their Docker images stored in AWS ECR by either asking directly or using an AWS CLI command to list all available repositories.
+Let's try pulling a repository of your classmate's image from the shared AWS ECR. You can obtain the names of their Docker images stored in AWS ECR by either asking directly or using an AWS CLI command to list all available repositories `aws ecr describe-repositories`.
 
 Once you have the repository name, proceed to pull.
 ```bash
