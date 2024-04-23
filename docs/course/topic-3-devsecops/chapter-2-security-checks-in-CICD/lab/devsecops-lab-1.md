@@ -2,7 +2,7 @@
 layout: custom
 title: Lab 1. Securing a Vulnerable Application
 grand_parent: Topic 3 - DevSecOps
-parent: Chapter 2 - Security Checks in CD/CD
+parent: Chapter 2 - Security Checks in CI/CD
 nav_order: 2
 ---
 # Lab 1 - Securing a Vulnerable Application

@@ -1,5 +1,5 @@
 ---
-title: Chapter 2 - Security Checks in CD/CD
+title: Chapter 2 - Security Checks in CI/CD
 layout: custom
 parent: Topic 3 - DevSecOps
 has_children: true
