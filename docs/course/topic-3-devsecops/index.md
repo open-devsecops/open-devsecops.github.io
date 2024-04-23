@@ -3,7 +3,7 @@ title: Topic 3 - DevSecOps
 layout: custom
 has_children: true
 has_toc: false
-nav_order: 4
+nav_order: 5
 ---
 
 # Topic 3 - DevSecOps

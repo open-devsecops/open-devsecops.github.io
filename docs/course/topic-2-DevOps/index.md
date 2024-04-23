@@ -3,7 +3,7 @@ title: Topic 2 - DevOps
 layout: custom
 has_children: true
 has_toc: false
-nav_order: 3
+nav_order: 4
 ---
 
 # Topic 2 - Development & Operations (DevOps)
