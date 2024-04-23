@@ -95,7 +95,7 @@ After tagging, push your Docker image to the AWS ECR repository
 docker push <shared-registry-url>/<repository-name>
 ```
 
-## Managing Docker Images Locally and Pulling from AWS ECR
+## Managing Docker Images Locally and Pulling from AWS ECR (Buddy Activity)
 Okay, now that your image is successfully pushed to the company's shared registry, it's accessible to anyone with the right permissions within your organization.
 
 ### Pulling the Docker Image from AWS ECR
