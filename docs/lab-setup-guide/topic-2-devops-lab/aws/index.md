@@ -184,3 +184,5 @@ BlueOcean improves the user experience of Jenkins, providing a more visual and i
 2. Switch to the Available tab and use the search bar to find `Blue Ocean`.
 3. Check the box next to Blue Ocean
 4. Click on Install to begin installing the selected plugins.
+
+![blueocean](./assets/blueocean.png)
