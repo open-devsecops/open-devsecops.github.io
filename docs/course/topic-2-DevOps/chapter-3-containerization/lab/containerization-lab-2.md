@@ -28,7 +28,12 @@ This lab requires the lab infrastructure to be set up by an instructor or admini
 
 **VPN Configuration and Connection:**
 - Download the VPN configuration file from `https://{public_ip}`. _Ask the lab administrator for the public ip of the internal network, and replace the `{public_ip}` placeholder._
+
+{: .info}
+When you access the website using the public IP, you may encounter a security warning in your browser that states **Your connection is not private**. This warning appears because the site is using a **self-signed SSL certificate** rather than one issued by a recognized Certificate Authority. They offer the same level of encryption but are not verified by a third-party authority that your browser trusts by default ([Learn more here](https://en.wikipedia.org/wiki/Self-signed_certificate)). Click on "Advanced" or "Show Details" and proceed to the website (The exact wording may vary depending on your browser).
+
 - Import the VPN configuration file into the Wireguard Client to establish the VPN connection. This step provides access to internal services.
+
 
 ![wireguard interface](./imgs/wireguard.png)
 
