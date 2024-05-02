@@ -38,9 +38,9 @@ To understand the skills gap that new graduates face, refer to our [User Researc
 ## Contributing to the Curriculum 🤝
 Contributions are welcome! Help us keep the curriculum relevant and effective by updating content, adding new exercises, or providing feedback.
 
-### Questions? Contact Our Team!
-- [Sirena - sirenaak@uw.edu](mailto:sirenaak@uw.edu)
-- [Bhavya - bhavyag@uw.edu](mailto:bhavyag@uw.edu)
-- [Eric - kim2000@uw.edu](mailto:kim2000@uw.edu)
-- [Mari - mkwoodwo@uw.edu](mailto:mkwoodwo@uw.edu)
-- [Brandon - bwmendo@uw.edu](mailto:bwmendo@uw.edu)
+### Connect with the Creators
+- [Sirena Akopyan](https://www.linkedin.com/in/sirena-akopyan/)
+- [Bhavya Garlapati](https://www.linkedin.com/in/bhavya-garlapati-95ab46225/)
+- [Eric Kim](https://www.linkedin.com/in/taehyunnkim/)
+- [Mari Woodworth](https://www.linkedin.com/in/marikowoodworth/)
+- [Brandon Mendoza](https://www.linkedin.com/in/bwmendo/)
