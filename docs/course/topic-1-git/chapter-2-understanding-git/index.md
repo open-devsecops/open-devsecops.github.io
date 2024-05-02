@@ -10,7 +10,7 @@ nav_order: 2
 # Git Fundamentals 
 ## What is a repository?
 
-{: .definition}
+{: .definition }
 > Repositories are like digital libraries where all the files for a specific project are stored. It is the central hub where the creator of the repository (also known as a repo) can decide who can edit and view the files. In GitHub you can create as many repositories as you want and you will be able to control the structure and workflow you want for your project or organization. 
 
 ### Creating & Editing a New Repository
