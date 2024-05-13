@@ -159,7 +159,7 @@ stage('Deploy') {
 > When specifying `<host-port>`, please choose a port number between 2000 and 3000 unless specified otherwise by your administrator. This range is allowed through the firewall, ensuring your deployed application is accessible on the Internet.
 
 {: .info }
-> Think back to when you built, pushed, pulled, and ran your container locally in Chapter 1. Now, we've automated this step to occur in a potentially different environment, demonstrating the power of CI/CD.
+> Think back to when you built, pushed, pulled, and ran your container locally in Chapter 3. Now, we've automated this step to occur in a potentially different environment, demonstrating the power of CI/CD.
 
 
 ### The Complete Jenkinsfile
