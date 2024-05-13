@@ -67,11 +67,11 @@ git clone https://github.com/open-devsecops/lab-infra-setup.git
 
 3. Change into the directory containing the Terraform scripts for Topic 3 DevOps lab:
 ```bash
-cd lab-infra-setup/topic-2-devops/aws
+cd lab-infra-setup/topic-3-devsecops/aws
 ```
 
 ### Initialize Terraform
-1. Within the Topic 2 - DevOps directory, initialize Terraform to install necessary providers and set up your environment.
+1. Within the Topic 3 - DevSecOps directory, initialize Terraform to install necessary providers and set up your environment.
 2. In the terminal, enter the following:
 ```bash
 terraform init
