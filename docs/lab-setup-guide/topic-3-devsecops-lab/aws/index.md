@@ -7,7 +7,7 @@ has_toc: false
 ---
 
 # DevSecOps Lab Infrastructure Setup Guide on AWS
-**Estimated Cost:** ~$2-3/day
+**Estimated Cost:** ~$1-2/day
 {: .label .label-yellow }
 
 This guide provides detailed instructions for setting up the necessary infrastructure on AWS to support the CI/CD labs in our curriculum. By following this guide, educators and learners will be able to prepare a robust environment for hands-on practice with continuous integration and continuous delivery.
