@@ -46,13 +46,9 @@ Containerization also supports microservices architectures, allowing for the seg
 - Fault Tolerance - A single faulty container does not affect the other containers. This allows multiple containers to run micro-services on the cloud, increasing the resilience and availability of the application.
 - Agility - Software developers can use this isolated environment to troubleshoot and change the application code without interfering with the operating system, hardware, and other services. This can shorten software release cycles and work on updates quicker.
 
-#### Image of Process**
 
-<div style="text-align: center;">
-    <img src="https://d1.awsstatic.com/product-page-diagram_Amazon-ECS%402x.0d872eb6fb782ddc733a27d2bb9db795fed71185%20(2).0033d27bf1c708546c00befa892639c61a483269.4ad7c71d50aa1d7bddbda52c68aa28104437e2d4.png" alt="AWS Cycle" style="max-width:100%;height:auto;"/>
-    <p><em>Source: <a href="https://aws.amazon.com/what-is/containerization/">AWS</a></em></p>
-</div>
-
+{: .lab}
+[Lab 1 - Containerizing a React Application](./lab/containerization-lab-1.html){: .btn .btn-purple .btn-fill }
 
 ## Artifact vs. Artifactory
 
@@ -74,6 +70,11 @@ An "artifact" refers to any file or collection of files that are produced as a r
 On the other hand, "Artifactory" is a product developed by JFrog. It functions as a universal repository manager, capable of handling various types of artifacts. Artifactory provides a centralized solution for storing and distributing different types of artifacts, including container images, software packages, binaries, and more. It supports a wide range of package formats. Artifactory also offers integration with various build tools, CI/CD pipelines, and development environments, making it a versatile tool for managing artifacts in a software development process.
 
 So, while an "artifact" is a product of the software development process, "Artifactory" is a tool for managing these products. It's a repository where various artifacts, including those from containerization processes, can be stored, managed, and distributed efficiently
+
+
+{: .lab}
+[Lab 2 - Accessing Corporate Network and AWS ECR](./lab/containerization-lab-2.html){: .btn .btn-purple .btn-fill }
+
 
 
 

@@ -77,7 +77,7 @@ aws ecr create-repository --repository-name <repository-name>
 ```
 
 {: .warning}
-When creating a new repository, it's important to choose a unique name.If you try to create a repository with a name that already exists within the AWS account in the same region, AWS will throw a `RepositoryAlreadyExistsException`. You can use the `aws ecr describe-repositories` command to list all available repositories.
+When creating a new repository, it's important to choose a unique name. If you try to create a repository with a name that already exists within the AWS account in the same region, AWS will throw a `RepositoryAlreadyExistsException`. You can use the `aws ecr describe-repositories` command to list all available repositories.
 
 ### Authenticate Docker Client to AWS ECR
 Authenticate your Docker client to the AWS ECR service to enable pushing and pulling images.
@@ -117,3 +117,6 @@ docker images
 ```
 
 After pulling the image, run it locally to see the application your classmate developed!
+
+{: .warning}
+Don't forget to deactivate your VPN connection after you have completed the lab exercise!

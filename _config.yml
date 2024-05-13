@@ -19,6 +19,6 @@ callouts:
   info:
     title: Info
     color: blue
-  definition:
-    title: Definition
+  lab:
+    title: Access The Lab
     color: purple

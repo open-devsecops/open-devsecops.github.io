@@ -21,8 +21,6 @@ Transitioning from the exploration of DevOps and CI/CD, we now turn our attentio
 > It might seem as though it was Ani and Mariam's lack of communication before building and deploying at fault, but imagine they are working in a company as large as Amazon or Boeing. It would be impractical and redundant to expect to know every developer's job.
 
 
-
-
 ## Deployment Environments
 
 - **💻 Development Environment:**
@@ -44,6 +42,9 @@ Transitioning from the exploration of DevOps and CI/CD, we now turn our attentio
 
 ![image](https://github.com/open-devsecops/open-devsecops.github.io/assets/35845527/6c306e97-b563-4cc7-baff-8d79ddc45bdf)
 _Source: [DevOps.com](/https://devops.com/i-want-to-do-continuous-deployment/)_
+
+{: .lab}
+[Lab 1 - Configuring a Simple CI/CD Pipeline](./lab/deployment-lab-1){: .btn .btn-purple .btn-fill }
 
 ## Deployment Strategies
 Deployment strategies are crucial for managing the transition of code from development through to production. Choosing the right strategy ensures that deployments are smooth, risks are minimized, and the user experience remains uninterrupted. Here are some common deployment strategies used in modern software development:

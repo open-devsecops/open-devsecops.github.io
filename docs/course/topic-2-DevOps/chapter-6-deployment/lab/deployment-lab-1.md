@@ -5,18 +5,29 @@ grand_parent: Topic 2 - DevOps
 parent: Chapter 6 - Deployment
 nav_order: 2
 ---
+**Estimated Time to Complete:** 60 minutes
+{: .label .label-blue }
+
+{: .info}
+Before you begin the lab exercise, please check the **Labs Overview** page to ensure that you have all the required software installed and that you meet all the prerequisites.
 
 ## Introduction
 In this lab, you will automate the process of building, and deploying a Dockerized application using Jenkins. Building upon the manual processes you learned in Chapter 3, you will create a very simple Jenkins pipeline that automates these tasks.
 
+This exercise aims to demystify the CI/CD process, helping you better visualize the workflow from building an application to its deployment. **It's important to note that CI/CD pipelines in real-world scenarios involve more complexity and other CI/CD tools might use different syntax for defining pipelines.** However, understanding this basic structure will equip you with the fundamental knowledge required to grasp more complex workflows in the industry.
+
 ## Accessing the Corporate Network via VPN
 
-{: .important }
-This lab requires the lab infrastructure to be set up by an instructor or administrator. Independent learners should refer to the [lab setup repository](https://github.com/open-devsecops/lab-infra-setup/tree/main/topic-2-cicd-lab/aws) to configure this environment accordingly.
+{: .warning }
+This lab requires the lab infrastructure to be set up by an instructor or administrator. Independent learners should refer to the [lab setup repository](../../../../lab-setup-guide/) to configure this environment accordingly.
 
 
 **VPN Configuration and Connection:**
 - Download the VPN configuration file from `https://{public_ip}`. _Ask the lab administrator for the public ip of the internal network, and replace the `{public_ip}` placeholder._
+
+{: .info}
+When you access the website using the public IP, you may encounter a security warning in your browser that states **Your connection is not private**. This warning appears because the site is using a **self-signed SSL certificate** rather than one issued by a recognized Certificate Authority. They offer the same level of encryption but are not verified by a third-party authority that your browser trusts by default ([Learn more here](https://en.wikipedia.org/wiki/Self-signed_certificate)). Click on "Advanced" or "Show Details" and proceed to the website (The exact wording may vary depending on your browser).
+
 - Import the VPN configuration file into the Wireguard Client to establish the VPN connection. This step provides access to internal services.
 ![wireguard interface](./imgs/wireguard.png)
 
@@ -54,9 +65,6 @@ Webhooks allow GitHub to notify Jenkins about code changes, triggering the pipel
 We're now going to create a Jenkinsfile. 
 
 Written in Groovy, Jenkinsfile provides a declarative way to to define our CI/CD Pipeline, automating the steps we manually performed in Chapter 1.
-
-{: .warning }
-> This exercise aims to demystify the CI/CD process, helping you better visualize the workflow from building an application to its deployment. It's important to note that CI/CD pipelines in real-world scenarios involve more complexity and other CI/CD tools might use different syntax for defining pipelines. However, understanding this basic structure will equip you with the fundamental knowledge required to grasp more complex workflows in the industry.
 
 **Declarative Pipeline Syntax**
 
@@ -205,3 +213,6 @@ http://{public_ip}:{host_port}
 ```
 
 Replace `{public_ip}` with the public IP address, and `{host_port}` with the specific port number you've chosen during the deployment stage in the Jenkinsfile.
+
+{: .warning}
+Don't forget to deactivate your VPN connection after you have completed the lab exercise!
