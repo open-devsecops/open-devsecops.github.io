@@ -188,7 +188,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker pull $AWS_ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com<image-name>'
+                sh 'docker pull $AWS_ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com/<image-name>'
                 sh 'docker rm -f <container-name> || true'
                 sh 'docker run -d -p "<host-port>:80" --name <container-name> $AWS_ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com/<image-name>'
             }
