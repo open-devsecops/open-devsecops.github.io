@@ -401,3 +401,19 @@ div.highlighter-rouge > button, div.listingblock > div.content > button, figure.
   margin-left: 0!important;
   margin-right: 0!important;
 }
+
+.site-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.site-nav-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  p {
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
