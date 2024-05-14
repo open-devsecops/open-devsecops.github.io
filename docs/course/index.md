@@ -61,11 +61,10 @@ nav_order: 1
         <tr>
             <td rowspan="2" style="vertical-align: middle; text-align: center; font-weight: bold; background-color: rgba(195, 125, 248, 0.5); border: 1px solid lightgray;">DevSecOps</td>
             <td style="border: 1px solid lightgray;">Chapter 1: DevSecOps</td>
-            <td style="text-align: center; background-color: #c8e6c9; color: #388e3c; font-weight: bold; border: 1px solid lightgray;">Yes</td>
         </tr>
         <tr>
             <td style="border: 1px solid lightgray;">Chapter 2: Security Checks in CI/CD</td>
-            <td style="text-align: center; border: 1px solid lightgray;"></td>
+            <td style="text-align: center; background-color: #c8e6c9; color: #388e3c; font-weight: bold; border: 1px solid lightgray;">Yes</td>
         </tr>
     </tbody>
 </table>
