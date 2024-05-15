@@ -224,7 +224,7 @@ SonarQube comes pre-installed, but some manual configuration is needed to integr
 To allow students to read the project reports in SonarQube, we need to create a new user account with the appropriate permissions.
 
 1. In SonarQube, go to the `Administration` tab.
-2. Click on `Security` in the left sidebar, then select `Users`.
+2. Click on `Security` in the navigation bar, then select `Users`.
 3. Click on the `Create User` button.
 4. Enter in the details and click `Create`.
    - **Login**: student
