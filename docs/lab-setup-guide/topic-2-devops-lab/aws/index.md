@@ -142,9 +142,14 @@ Once your infrastructure is ready and you have connected to the internal network
 1. Navigate to `http://jenkins.internal` in your web browser.
 ![jenkins unlock page](./assets/unlock-jenkins.png)
 2. To unlock Jenkins and begin setup, you need the initial admin password. Use the command below to retrieve this.
+
 ```bash
 ssh -i topic-2-cicd-lab-key.pem ubuntu@{ec2_public_ip} -f "sudo docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword"
 ```
+
+{: .important }
+Make sure you are in the `topic-2-devsecops/aws` directory where the SSH key is located before you enter the command. 
+
 3. Back in your web browser on the Jenkins unlock page, enter the initial admin password you retrieved to unlock 
 
 4. Select the option to Install suggested plugins.
