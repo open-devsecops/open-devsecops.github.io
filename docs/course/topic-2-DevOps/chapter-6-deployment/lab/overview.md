@@ -25,9 +25,9 @@ Before you begin this lab, ensure you have the following tools installed and rea
 
 | Name          | Description                                                                                    | Installation Guide |
 |---------------| ---------------------------------------------------------------------------------------------- | ------------------ |
-| Docker        | Used for building and running containerized applications.                                      | [Download Link](https://docs.docker.com/get-docker/) |
-| Git           | For version control and forking the reference application repository.                          | [Download Link](https://git-scm.com/downloads)|
-| Wireguard VPN | For establishing a VPN tunnel to connect to the internal network.                              | [Download Link](https://www.wireguard.com/install/) |
+| Docker        | Used for building and running containerized applications.                                      | [Download Link](https://docs.docker.com/get-docker/){: .btn .btn-purple .btn-fill } |
+| Git           | For version control and forking the reference application repository.                          | [Download Link](https://git-scm.com/downloads){: .btn .btn-purple .btn-fill }|
+| Wireguard VPN | For establishing a VPN tunnel to connect to the internal network.                              | [Download Link](https://www.wireguard.com/install/){: .btn .btn-purple .btn-fill } |
 
 ### Skills and Knowledge
 Below are the skills and knowledge expected to successfully complete the lab exercises:
